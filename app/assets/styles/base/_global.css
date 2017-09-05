@@ -1,0 +1,10 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #29296D;
+  /*background-color: #29296D;*/
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

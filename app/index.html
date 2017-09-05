@@ -2,14 +2,17 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet" type='text/css'>
   <title>Marina Square</title>
   <meta name="keywords" content="Travel planning, travel bundles, travel escapes">
   <meta name="description" content="Your clarity. One trip away. We create soul restoring journeys that inspire you to be you.">
+  <link rel="stylesheet" href="temp/styles/styles.css">
 </head>
 <body>
   <div class="large-hero">
     <img src="assets/images/hero--large.jpg">
+    
+    <div>
       <nav>
         <ul>
           <li><a href="#project">Project</a></li>
@@ -19,11 +22,20 @@
           <li><a href="#architect">Architect</a></li>
           <li><a href="contact">Contact</a></li>
         </ul>
+        <a href="#" class="btn">Register interest</a>
       </nav>
-      <a href="#">Register interest</a>
-    <h1>Marina Square</h1>
-    <h2>Shopping</h2>
-  </div>
+    </div>
+
+    <div class="large-hero__text-content">
+      <h1 class="large-hero__title">Marina Square</h1>
+      <h2 class="large-hero__subtitle">Shopping</h2>
+    </div>
+
+    <div class="large-hero__scroll">
+      <img src="assets/images/scroll.png" alt="scroll">
+      <p class="large-hero__scroll-tip">Scroll down</p>
+    </div>
+  </div><!-- large-hero -->
 
   <header>
     <img src="" alt="Marina Square">
@@ -37,7 +49,7 @@
         <li><a href="contact">Contact</a></li>
       </ul>
     </nav>
-    <a href="#">Register interest</a>
+    <a href="#" class="btn">Register interest</a>
   </header>
 
   <div id="project">
@@ -94,7 +106,7 @@
       </select>
       <input type="text" name="subject">
       <textarea name="message" id="" cols="30" rows="10"></textarea>
-      <input type="submit" value="Register">
+      <input type="submit" class="btn btn--blue btn--large" value="Register">
     </form>
   </div>
 

@@ -1,0 +1,18 @@
+.btn {
+  color: #fff;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  text-decoration: none;
+  padding: .6rem;
+  display: inline-block;
+  font-size: .875rem;
+  letter-spacing: 1px;
+
+  &--large {
+    padding: 1rem 4rem;
+  }
+
+  &--blue {
+    background: $mainBlue;
+  }
+}

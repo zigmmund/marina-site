@@ -1,0 +1,15 @@
+.page-section {
+  padding: 2.4rem 0;
+
+  @mixin atMedium {
+    padding: 4.5rem 0;
+  }
+
+  &--white {
+    background-color: #fff;
+  }
+
+  &--lightgreen {
+    background-color: #E0FAF1;
+  }
+}

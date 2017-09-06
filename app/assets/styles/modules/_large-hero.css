@@ -16,6 +16,10 @@
     opacity: .4;
   }
 
+  &__image {
+    display: block;
+  }
+
   &__text-content {
     position: absolute;
     width: 100%;
@@ -29,19 +33,28 @@
   &__title {
     color: #fff;
     font-weight: 500;
-    font-size: 4.8rem;
+    font-size: 2.4rem;
     margin: 0;
     text-transform: uppercase;
+
+    @mixin atSmall {
+      font-size: 4.8rem;
+    }
+
   }
 
   &__subtitle {
     color: #fff;
     font-weight: 300;
-    font-size: 2rem;
+    font-size: 1.1rem;
     font-family: serif;
     letter-spacing: 5px;
     margin: 0;
     text-transform: uppercase;
+
+    @mixin atSmall {
+      font-size: 2.9rem;
+    }
   }
 
   &__scroll {

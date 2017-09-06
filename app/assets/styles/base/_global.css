@@ -1,10 +1,15 @@
 body {
   font-family: 'Montserrat', sans-serif;
   color: #29296D;
-  /*background-color: #29296D;*/
+  background-color: #29296D;
+  padding: 1rem;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+* {
+  box-sizing: border-box;
 }

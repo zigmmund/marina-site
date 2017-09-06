@@ -1,0 +1,13 @@
+.site-header {
+  padding: 1rem;
+
+  &__logo {
+    float: left;
+  }
+
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}

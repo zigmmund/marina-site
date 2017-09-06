@@ -1,0 +1,34 @@
+.secondary-nav {
+  display: inline-block;
+  /*width: 100%;*/
+  text-align: center;
+  padding: .875rem;
+  float: left;
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+    display: inline-block;
+  }
+
+  li:last-child {
+    a {
+      font-weight: 400;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: .875rem;
+    letter-spacing: 1px;
+    padding: .6rem 1.2rem;
+    font-weight: 500;
+  }
+
+}

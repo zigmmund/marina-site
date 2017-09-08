@@ -461,6 +461,7 @@ body {
   color: #29296D;
   background-color: #29296D;
   padding: 1rem;
+  min-width: 375px;
 }
 
 img {
@@ -478,6 +479,8 @@ img {
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  background: url("../../assets/images/hero--large.jpg") center center no-repeat;
+  background-size: cover;
 
 }
 
@@ -517,7 +520,7 @@ img {
 
   }
 
-@media (min-width: 530px) {
+@media (min-width: 375px) {
 
 .large-hero__title {
       font-size: 4.8rem
@@ -535,7 +538,7 @@ img {
     text-transform: uppercase;
   }
 
-@media (min-width: 530px) {
+@media (min-width: 375px) {
 
 .large-hero__subtitle {
       font-size: 2.9rem
@@ -580,23 +583,22 @@ img {
 
 .wrapper {
   padding: 0 18px;
-  max-width: 1200px;
+  max-width: 976px;
   margin: 0 auto;
 }
 
-.wrapper--medium {
-    max-width: 976px;
-  }
+@media (min-width: 1200px) {
 
-.wrapper--narrow {
-    max-width: 470px;
+.wrapper {
+    max-width: 1200px
+}
   }
 
 .page-section {
   padding: 2.4rem 0;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 768px) {
 
 .page-section {
     padding: 4.5rem 0
@@ -632,7 +634,7 @@ img {
     margin-bottom: 3.875rem;
   }
 
-@media (min-width: 800px) {
+@media (min-width: 768px) {
 
     .row__medium-6 {
       float: left;
@@ -897,8 +899,82 @@ img {
 
 .site-footer {
   color: #fff;
+
+
 }
 
 .site-footer__section {
-    display: inline-block;
+    display: block;
+    text-align: center;
+    margin-bottom: 2rem;
+
+  }
+
+@media (min-width: 768px) {
+
+.site-footer__section {
+      display: inline-block;
+      text-align: left;
+      width: 32.5%
+
+  }
+  }
+
+@media (min-width: 1200px) {
+
+.site-footer__section {
+      width: 24.5%;
+      margin-bottom: 0
+
+  }
+  }
+
+.site-footer--has-full-width-until-large {
+    width: 100%;
+  }
+
+@media (min-width: 1200px) {
+
+.site-footer--has-full-width-until-large {
+      width: 24%
+  }
+  }
+
+.site-footer--has-b-margin-until-medium {
+    margin-bottom: 2.5rem;
+  }
+
+@media (min-width: 768px) {
+
+.site-footer--has-b-margin-until-medium {
+      margin-bottom: 0
+  }
+  }
+
+.site-footer__headline {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+.site-footer__info {
+    font-size: .875rem;
+  }
+
+.site-footer__title {
+    margin: 0 auto .5em;
+    font-size: 1.375rem;
+    max-width: 8.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.375rem;
+  }
+
+.site-footer__subtitle {
+    font-family: serif;
+    margin: 0 auto;
+    max-width: 9.5rem;
+    text-align: center;
+    font-size: .75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3125rem;
   }

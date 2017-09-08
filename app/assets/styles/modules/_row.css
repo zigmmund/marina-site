@@ -2,6 +2,10 @@
 
   @mixin clearfix;
 
+  &--b-margin {
+    margin-bottom: 3.875rem;
+  }
+
   @mixin atMedium {
 
     &__medium-6 {
@@ -10,11 +14,11 @@
     }
 
     &--l-padding-small {
-      padding-left: 65px;
+      padding-left: 100px;
     }
 
     &--r-padding-small {
-      padding-right: 65px;
+      padding-right: 100px;
     }
 
   }

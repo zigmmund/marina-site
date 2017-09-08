@@ -87,9 +87,9 @@
 
   <div id="location" class="page-section page-section--white">
     <div class="wrapper">
-      <h2>Location</h2>
+      <h2 class="headline headline--centered">Location</h2>
       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-      <div class="row">
+      <div class="row row--b-margin">
         <div class="row__medium-6">
           <img src="assets/images/algarve.jpg" alt="algarve">
         </div>
@@ -98,6 +98,7 @@
           <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
         </div>
       </div>
+
       <div class="row">
         <div class="row__medium-6 row--r-padding-small">
           <h3>Villamoura</h3>
@@ -110,11 +111,19 @@
     </div>
   </div><!-- #location -->
 
-  <div id="floorplans">
-    <img src="assets/images/floorplans.png" alt="">
-    <h2>Floorplans</h2>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-    <a href="#">Register interest</a>
+  <div id="floorplans" class="floorplans">
+    <div class="row">
+      <div class="row__medium-6">
+        <img src="assets/images/floorplans.png" alt="">
+      </div>
+      <div class="row__medium-6">
+        <div class="floorplans__text-content">
+          <h2 class="headline">Floorplans</h2>
+          <p class="floorplans__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+          <a class="btn" href="#">Register interest</a>
+        </div>
+      </div>
+    </div>
   </div><!-- #floorplans -->
 
   <div id="gallery" class="page-section page-section--white">
@@ -125,27 +134,60 @@
 
   <div id="architect" class="page-section page-section--lightgreen">
     <div class="wrapper">
-      <img src="assets/images/vasco-vieira.jpg" alt="">
-      <h2>Architect</h2>
-      <p>Vasco Vieira was born in Johannesburg, South Africa, in 1969. In 1994 after completing his degree in Architecture at the University of the Witwatersrand (WITS) he moved to Portugal where he soon after found himself working in the prestigious resort of Vale do Lobo in the Algarve.</p>
-      <p>After a few years Vasco had been appointed as both Chief Architect and Construction Director of the Resort, a position that he kept until eventually deciding to set up his own practice. ARQUI + was set up mid 2003 and Vasco was immediately rewarded for the quality of his architecture by being listed as one of the top 10 architects internationally by the Homes Overseas Magazine in 2004. Since then ARQUI + has received a number of awards for their innovative designs.</p>
+      <div class="row">
+        <div class="row__medium-6 row--r-padding-small">
+          <img src="assets/images/vasco-vieira.jpg" alt="">
+        </div>
+        <div class="row__medium-6 row--l-padding-small">
+          <h2 class="headline">Architect</h2>
+          <p>Vasco Vieira was born in Johannesburg, South Africa, in 1969. In 1994 after completing his degree in Architecture at the University of the Witwatersrand (WITS) he moved to Portugal where he soon after found himself working in the prestigious resort of Vale do Lobo in the Algarve.</p>
+          <p>After a few years Vasco had been appointed as both Chief Architect and Construction Director of the Resort, a position that he kept until eventually deciding to set up his own practice. ARQUI + was set up mid 2003 and Vasco was immediately rewarded for the quality of his architecture by being listed as one of the top 10 architects internationally by the Homes Overseas Magazine in 2004. Since then ARQUI + has received a number of awards for their innovative designs.</p>
+        </div>
+      </div>
     </div>
   </div><!-- architect -->
 
   <div id="contact" class="page-section page-section--white">
-    <div class="wrapper">
-      <h2>Register Your Interest</h2>
-      <form>
-        <input type="text" name="email">
-        <input type="text" name="last_name">
-        <input type="text" name="first_name">
-        <select name="country" id="">
-          <option value="">Portugal</option>
-        </select>
-        <input type="text" name="subject">
-        <textarea name="message" id="" cols="30" rows="10"></textarea>
-        <input type="submit" class="btn btn--blue btn--large" value="Register">
-      </form>
+    <div class="wrapper wrapper--medium">
+      <h2 class="headline headline--centered">Register Your Interest</h2>
+
+      <form action="" class="form" method="post">
+        <div class="form__email">
+          <label for="email"></label>
+          <input type="email" placeholder="Email" name="email" class="form__text-input" required>
+        </div>
+        <div class="form__last-name">
+          <label for="last_name"></label>
+          <input type="text" placeholder="Last Name" name="last-name" class="form__text-input" equired>
+        </div>
+        <div class="form__first-name">
+          <label for="first_name"></label>
+          <input type="text" placeholder="First Name" name="first_name" class="form__text-input" required>
+        </div>
+        <div class="form__phone">
+          <label for="phone"></label>
+          <input type="text" placeholder="Phone" name="phone" class="form__text-input">
+        </div>
+        <div class="form__country">
+          <label for="country"></label>
+          <select name="country" placeholder="Country" class="form__select">
+            <option disabled hidden selected>Country</option>
+            <option>Portugal</option>
+          </select>
+        </div>
+        <div class="form__subject">
+          <label for="subject"></label>
+          <input type="text" placeholder="Subject" name="subject" class="form__text-input">
+        </div>
+        <div class="form__message">
+          <label for="message"></label>
+          <textarea name="message" placeholder="Message" rows="4" cols="50" class="form__textarea" required></textarea>
+        </div>
+        <div class="form__submit">
+          <input type="submit" value="Register" class="btn btn--blue btn--large" />
+        </div>
+      </form><!-- // End form -->
+
     </div>
   </div>
 

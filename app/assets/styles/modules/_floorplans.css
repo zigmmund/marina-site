@@ -1,0 +1,15 @@
+.floorplans {
+  color: white;
+  position: relative;
+
+  &__text-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__description {
+    max-width: 26rem;
+  }
+}

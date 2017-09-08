@@ -2,4 +2,12 @@
   padding: 0 18px;
   max-width: 1200px;
   margin: 0 auto;
+
+  &--medium {
+    max-width: 976px;
+  }
+
+  &--narrow {
+    max-width: 470px;
+  }
 }

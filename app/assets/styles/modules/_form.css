@@ -1,0 +1,94 @@
+.form {
+  padding: 37.5px;
+  margin: 50px 0;
+
+  &__text-input,
+  &__select,
+  &__textarea {
+    color: #A9AAC4;
+    font: inherit;
+    margin: 0;
+    background: none;
+    border: none;
+    border-bottom: solid 1px #A9AAC4;
+  	font-size: 1.000em;
+    font-weight: 400;
+    letter-spacing: 1px;
+  	margin: 0em 0 1.875em 0;
+  	padding: 0 0 0.875em 0;
+    text-transform: none;
+  	width: 100%;
+    transition: all 0.3s;
+  }
+
+  &__text-input:focus,
+  &__textarea:focus {
+    outline: none;
+    padding: 0 0 0.875em 0;
+    border-bottom: solid 1px #29296D;
+  }
+
+  &__textarea:focus {
+    border-bottom: solid 1px #29296D;
+  }
+
+  &__text-input {
+    line-height: normal;
+  }
+
+  &__select {
+    background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png') no-repeat right;
+    outline: none;
+    appearance: none;
+    border-radius: 0;
+  }
+
+  &__textarea {
+    overflow: auto;
+    resize: none;
+    line-height: 150%;
+    height: 150px;
+    width: 100%;
+  }
+
+  &__last-name,
+  &__phone {
+    float: left;
+    width: 45%;
+  }
+
+  &__first-name,
+  &__country {
+    float: right;
+    width: 45%;
+  }
+
+  &__email,
+  &__subject {
+    width: 100%;
+  }
+
+  &__message {
+    float: none;
+  }
+
+  &__submit {
+    width: 100%;
+    text-align: center;
+  }
+
+  ::-webkit-input-placeholder {
+  	color: #A9AAC4;
+  }
+
+  :-moz-placeholder {
+  	color: #A9AAC4;
+  	opacity: 1;
+  }
+
+  :-ms-input-placeholder {
+  	color: #A9AAC4;
+  }
+
+
+}

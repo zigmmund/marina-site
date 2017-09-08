@@ -13,4 +13,6 @@
 @import "modules/_site-header";
 @import "modules/_project";
 @import "modules/_features";
+@import "modules/_floorplans";
+@import "modules/_form";
 @import "modules/_site-footer";

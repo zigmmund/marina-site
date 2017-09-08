@@ -450,6 +450,12 @@ template {
   display: none;
 }
 
+html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   color: #29296D;
@@ -578,6 +584,14 @@ img {
   margin: 0 auto;
 }
 
+.wrapper--medium {
+    max-width: 976px;
+  }
+
+.wrapper--narrow {
+    max-width: 470px;
+  }
+
 .page-section {
   padding: 2.4rem 0;
 }
@@ -614,6 +628,10 @@ img {
     display: table;
   }
 
+.row--b-margin {
+    margin-bottom: 3.875rem;
+  }
+
 @media (min-width: 800px) {
 
     .row__medium-6 {
@@ -622,11 +640,11 @@ img {
     }
 
     .row--l-padding-small {
-      padding-left: 65px;
+      padding-left: 100px;
     }
 
     .row--r-padding-small {
-      padding-right: 65px;
+      padding-right: 100px;
     }
   }
 
@@ -726,6 +744,121 @@ img {
   border: 2px solid #22D9A1;
   color: #22D9A1;
 }
+
+.floorplans {
+  color: white;
+  position: relative;
+}
+
+.floorplans__text-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+
+.floorplans__description {
+    max-width: 26rem;
+  }
+
+.form {
+  padding: 37.5px;
+  margin: 50px 0;
+
+
+}
+
+.form__text-input,
+  .form__select,
+  .form__textarea {
+    color: #A9AAC4;
+    font: inherit;
+    margin: 0;
+    background: none;
+    border: none;
+    border-bottom: solid 1px #A9AAC4;
+  	font-size: 1.000em;
+    font-weight: 400;
+    letter-spacing: 1px;
+  	margin: 0em 0 1.875em 0;
+  	padding: 0 0 0.875em 0;
+    text-transform: none;
+  	width: 100%;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+.form__text-input:focus,
+  .form__textarea:focus {
+    outline: none;
+    padding: 0 0 0.875em 0;
+    border-bottom: solid 1px #29296D;
+  }
+
+.form__textarea:focus {
+    border-bottom: solid 1px #29296D;
+  }
+
+.form__text-input {
+    line-height: normal;
+  }
+
+.form__select {
+    background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png') no-repeat right;
+    outline: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    border-radius: 0;
+  }
+
+.form__textarea {
+    overflow: auto;
+    resize: none;
+    line-height: 150%;
+    height: 150px;
+    width: 100%;
+  }
+
+.form__last-name,
+  .form__phone {
+    float: left;
+    width: 45%;
+  }
+
+.form__first-name,
+  .form__country {
+    float: right;
+    width: 45%;
+  }
+
+.form__email,
+  .form__subject {
+    width: 100%;
+  }
+
+.form__message {
+    float: none;
+  }
+
+.form__submit {
+    width: 100%;
+    text-align: center;
+  }
+
+.form ::-webkit-input-placeholder {
+  	color: #A9AAC4;
+  }
+
+.form :-moz-placeholder {
+  	color: #A9AAC4;
+  	opacity: 1;
+  }
+
+.form :-ms-input-placeholder {
+  	color: #A9AAC4;
+  }
 
 .site-footer {
   color: #fff;

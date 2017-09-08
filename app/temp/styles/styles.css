@@ -738,12 +738,47 @@ img {
     text-align: center;
   }
 
-.feature {
-  display: inline-block;
-  padding: 3rem;
-  border: 2px solid #22D9A1;
-  color: #22D9A1;
+.features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+
 }
+
+.features__item {
+    position: relative;
+    height: 10rem;
+    width: 10rem;
+    text-align: center;
+    margin: 0 3rem;
+    border: 2px solid #22D9A1;
+    color: #22D9A1;
+  }
+
+.features__text-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+
+.features__numbers {
+    font-size: 3rem;
+    font-family: serif;
+  }
+
+.features__units {
+    text-transform: uppercase;
+    font-weight: 500;
+  }
 
 .floorplans {
   color: white;

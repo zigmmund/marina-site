@@ -1,0 +1,58 @@
+.location {
+  position: relative;
+  min-height: 25rem;
+  background: url("../../assets/images/google-map.jpg") center center no-repeat;
+  background-size: cover;
+
+  &__pin {
+    position: absolute;
+    background: $mainBlue;
+    bottom: 52%;
+    left: 40%;
+    padding: .5rem .25rem;
+
+    @mixin atSmall {
+      left: 45%;
+    }
+
+    @mixin atMedium {
+      left: 46.5%
+    }
+
+    @mixin atLarge {
+      left: 47.3%;
+      bottom: 51%;
+    }
+
+    &:after {
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 40px 10px 0 10px;
+      border-color: $mainBlue transparent transparent transparent;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__title {
+    color: #23DCA3;
+    margin: 0 auto .5em;
+    text-align: center;
+    font-size: 1.1rem;
+    max-width: 6.25rem;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    color: #23DCA3;
+    font-family: serif;
+    margin: 0 auto;
+    max-width: 6.5rem;
+    text-align: center;
+    font-size: .6rem;
+    text-transform: uppercase;
+  }
+}

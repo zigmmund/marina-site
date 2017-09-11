@@ -1,9 +1,9 @@
-.secondary-nav {
-  display: inline-block;
-  /*width: 100%;*/
+.top-nav {
+  position: absolute;
+  top: 2rem;
+  width: 100%;
   text-align: center;
-  padding: .875rem;
-  float: left;
+  z-index: 1;
 
   ul {
     margin: 0;
@@ -12,23 +12,28 @@
 
   li {
     list-style: none;
-    display: inline-block;
+    display: none;
+
+    @mixin atMedium {
+      display: inline-block;
+    }
   }
 
   li:last-child {
+    display: inline-block;
+
     a {
       font-weight: 400;
     }
+
   }
 
   a {
     text-decoration: none;
     text-transform: uppercase;
     color: #fff;
-    font-size: .875rem;
-    letter-spacing: 1px;
+    font-size: .9375rem;
     padding: .6rem 1.2rem;
     font-weight: 500;
   }
-
 }

@@ -1,13 +1,94 @@
 .site-header {
+  position: relative;
   padding: 1rem;
 
-  &__logo {
-    float: left;
+  @mixin atLarge {
+    padding: 3rem
   }
 
-  &::after {
-    content: "";
-    clear: both;
-    display: table;
+  &__logo {
+    position: static;
+    display: block;
+    text-align: center;
+    font-size: 2.4rem;
+    text-decoration: none;
+    color: #fff;
+
+    @mixin atLarge {
+      position: absolute;
+      display: inline-block;
+      left: auto;
+      transform: translate(0, -50%);
+    }
   }
+
+  &__menu-content {
+
+  }
+
+  &__menu-icon {
+    width: 20px;
+    height: 19px;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    z-index: 10;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 3px;
+      background-color: #fff;
+      transform-origin: 0 0;
+      transition: transform .3s ease-in;
+    }
+
+    &__middle {
+      position: absolute;
+      top: 8px;
+      left: 0;
+      width: 20px;
+      height: 3px;
+      background-color: #fff;
+      transition: all .3s ease-out;
+      transform-origin: 0 50%;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 20px;
+      height: 3px;
+      background-color: #fff;
+      transform-origin: 0 100%;
+      transition: transform .3s ease-in;
+    }
+
+    @mixin atLarge {
+      display: none;
+    }
+  }
+
+  &__menu-icon--close-x {
+    &::before {
+      transform: rotate(45deg) scaleX(1.25);
+
+    }
+
+    .site-header__menu-icon__middle {
+      opacity: 0;
+      transform: scaleX(0);
+    }
+
+    &::after {
+      transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+    }
+  }
+
+  @mixin clearfix;
 }

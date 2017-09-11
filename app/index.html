@@ -10,19 +10,18 @@
 </head>
 <body>
   <div class="large-hero">
-    <header>
-      <nav class="primary-nav">
-        <ul>
-          <li><a href="#project">Project</a></li>
-          <li><a href="#location">Location</a></li>
-          <li><a href="#floorplans">Floorplans</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#architect">Architect</a></li>
-          <li><a href="contact">Contact</a></li>
-          <li><a href="#" class="btn">Register interest</a></li>
-        </ul>
-      </nav>
-    </header>
+
+    <nav class="top-nav">
+      <ul>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#location">Location</a></li>
+        <li><a href="#floorplans">Floorplans</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#architect">Architect</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li"><a href="#" class="btn">Register interest</a></li>
+      </ul>
+    </nav>
 
     <div class="large-hero__text-content">
       <div class="wrapper">
@@ -38,20 +37,27 @@
   </div><!-- large-hero -->
 
 
-  <div class="site-header">
-    <img src="http://via.placeholder.com/300x65/29296D/ffffff?text=MARINA+SQUARE" alt="Marina Square" class="site-header__logo">
-    <nav class="secondary-nav">
-      <ul>
-        <li><a href="#project">Project</a></li>
-        <li><a href="#location">Location</a></li>
-        <li><a href="#floorplans">Floorplans</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#architect">Architect</a></li>
-        <li><a href="contact">Contact</a></li>
-        <li><a href="#" class="btn">Register interest</a></li>
-      </ul>
-    </nav>
-  </div><!-- site-header -->
+  <header class="site-header">
+    <a href="#" class="site-header__logo">Marina Square</a>
+
+    <div class="site-header__menu-icon">
+      <div class="site-header__menu-icon__middle"></div>
+    </div>
+
+    <div class="site-header__menu-content">
+      <nav class="primary-nav primary-nav--pull-right">
+        <ul>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#location">Location</a></li>
+          <li><a href="#floorplans">Floorplans</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#architect">Architect</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#" class="btn">Register interest</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header><!-- site-header -->
 
   <div id="project" class="page-section page-section--white">
     <div class="wrapper">
@@ -223,6 +229,13 @@
     </div>
   </footer>
 
+
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+
+  <script src="assets/scripts/app.js"></script>
 
 
 

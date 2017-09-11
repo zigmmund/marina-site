@@ -1,9 +1,22 @@
 .primary-nav {
-  position: absolute;
-  top: 2rem;
-  width: 100%;
   text-align: center;
-  z-index: 1;
+  padding: 1rem;
+  display: none;
+
+  @mixin atLarge {
+    display: block;
+  }
+
+  &--pull-right {
+
+    @mixin atLarge {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
 
   ul {
     margin: 0;
@@ -12,7 +25,13 @@
 
   li {
     list-style: none;
-    display: inline-block;
+    display: block;
+    margin-bottom: 1rem;
+
+    @mixin atMedium {
+      display: inline-block;
+      margin-bottom: 0;
+    }
   }
 
   li:last-child {
@@ -25,9 +44,9 @@
     text-decoration: none;
     text-transform: uppercase;
     color: #fff;
-    font-size: .875rem;
-    letter-spacing: 1px;
-    padding: .6rem 1.2rem;
+    font-size: .9375rem;
+    padding: .6rem;
     font-weight: 500;
   }
+
 }

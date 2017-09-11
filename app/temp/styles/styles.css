@@ -513,16 +513,17 @@ img {
 
 .large-hero__title {
     color: #fff;
-    font-weight: 500;
-    font-size: 2.4rem;
-    margin: 0;
+    font-weight: 400;
+    font-size: 2.8rem;
+    margin: 0 0 .5em;
     text-transform: uppercase;
 
   }
 
-@media (min-width: 375px) {
+@media (min-width: 992px) {
 
 .large-hero__title {
+      font-weight: 500;
       font-size: 4.8rem
 
   }
@@ -531,14 +532,14 @@ img {
 .large-hero__subtitle {
     color: #fff;
     font-weight: 300;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     font-family: serif;
     letter-spacing: 5px;
     margin: 0;
     text-transform: uppercase;
   }
 
-@media (min-width: 375px) {
+@media (min-width: 992px) {
 
 .large-hero__subtitle {
       font-size: 2.9rem
@@ -598,7 +599,7 @@ img {
   padding: 2.4rem 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 
 .page-section {
     padding: 4.5rem 0
@@ -634,7 +635,7 @@ img {
     margin-bottom: 3.875rem;
   }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 
     .row__medium-6 {
       float: left;
@@ -650,13 +651,195 @@ img {
     }
   }
 
-.primary-nav {
+.top-nav {
   position: absolute;
   top: 2rem;
   width: 100%;
   text-align: center;
   z-index: 1;
 }
+
+.top-nav ul {
+    margin: 0;
+    padding: 0;
+  }
+
+.top-nav li {
+    list-style: none;
+    display: none;
+  }
+
+@media (min-width: 992px) {
+
+.top-nav li {
+      display: inline-block
+  }
+  }
+
+.top-nav li:last-child {
+    display: inline-block;
+
+  }
+
+.top-nav li:last-child a {
+      font-weight: 400;
+    }
+
+.top-nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: .9375rem;
+    padding: .6rem 1.2rem;
+    font-weight: 500;
+  }
+
+.site-header {
+  position: relative;
+  padding: 1rem;
+}
+
+@media (min-width: 1200px) {
+
+.site-header {
+    padding: 3rem;
+}
+  }
+
+.site-header__logo {
+    position: static;
+    display: block;
+    text-align: center;
+    font-size: 2.4rem;
+    text-decoration: none;
+    color: #fff;
+  }
+
+@media (min-width: 1200px) {
+
+.site-header__logo {
+      position: absolute;
+      display: inline-block;
+      left: auto;
+      -webkit-transform: translate(0, -50%);
+              transform: translate(0, -50%)
+  }
+  }
+
+.site-header__menu-content {
+
+  }
+
+.site-header__menu-icon {
+    width: 20px;
+    height: 19px;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    z-index: 10;
+  }
+
+.site-header__menu-icon::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 3px;
+      background-color: #fff;
+      -webkit-transform-origin: 0 0;
+              transform-origin: 0 0;
+      -webkit-transition: -webkit-transform .3s ease-in;
+      transition: -webkit-transform .3s ease-in;
+      transition: transform .3s ease-in;
+      transition: transform .3s ease-in, -webkit-transform .3s ease-in;
+    }
+
+.site-header__menu-icon__middle {
+      position: absolute;
+      top: 8px;
+      left: 0;
+      width: 20px;
+      height: 3px;
+      background-color: #fff;
+      -webkit-transition: all .3s ease-out;
+      transition: all .3s ease-out;
+      -webkit-transform-origin: 0 50%;
+              transform-origin: 0 50%;
+    }
+
+.site-header__menu-icon::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 20px;
+      height: 3px;
+      background-color: #fff;
+      -webkit-transform-origin: 0 100%;
+              transform-origin: 0 100%;
+      -webkit-transition: -webkit-transform .3s ease-in;
+      transition: -webkit-transform .3s ease-in;
+      transition: transform .3s ease-in;
+      transition: transform .3s ease-in, -webkit-transform .3s ease-in;
+    }
+
+@media (min-width: 1200px) {
+
+.site-header__menu-icon {
+      display: none
+  }
+  }
+
+.site-header__menu-icon--close-x::before {
+      -webkit-transform: rotate(45deg) scaleX(1.25);
+              transform: rotate(45deg) scaleX(1.25);
+
+    }
+
+.site-header__menu-icon--close-x .site-header__menu-icon__middle {
+      opacity: 0;
+      -webkit-transform: scaleX(0);
+              transform: scaleX(0);
+    }
+
+.site-header__menu-icon--close-x::after {
+      -webkit-transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+              transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+    }
+
+.site-header::after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+
+.primary-nav {
+  text-align: center;
+  padding: 1rem;
+  display: none;
+
+}
+
+@media (min-width: 1200px) {
+
+.primary-nav {
+    display: block
+
+}
+  }
+
+@media (min-width: 1200px) {
+
+.primary-nav--pull-right {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%)
+  }
+  }
 
 .primary-nav ul {
     margin: 0;
@@ -665,7 +848,16 @@ img {
 
 .primary-nav li {
     list-style: none;
-    display: inline-block;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+@media (min-width: 992px) {
+
+.primary-nav li {
+      display: inline-block;
+      margin-bottom: 0
+  }
   }
 
 .primary-nav li:last-child a {
@@ -676,57 +868,9 @@ img {
     text-decoration: none;
     text-transform: uppercase;
     color: #fff;
-    font-size: .875rem;
-    letter-spacing: 1px;
-    padding: .6rem 1.2rem;
+    font-size: .9375rem;
+    padding: .6rem;
     font-weight: 500;
-  }
-
-.secondary-nav {
-  display: inline-block;
-  /*width: 100%;*/
-  text-align: center;
-  padding: .875rem;
-  float: left;
-
-}
-
-.secondary-nav ul {
-    margin: 0;
-    padding: 0;
-  }
-
-.secondary-nav li {
-    list-style: none;
-    display: inline-block;
-  }
-
-.secondary-nav li:last-child a {
-      font-weight: 400;
-    }
-
-.secondary-nav a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #fff;
-    font-size: .875rem;
-    letter-spacing: 1px;
-    padding: .6rem 1.2rem;
-    font-weight: 500;
-  }
-
-.site-header {
-  padding: 1rem;
-}
-
-.site-header__logo {
-    float: left;
-  }
-
-.site-header::after {
-    content: "";
-    clear: both;
-    display: table;
   }
 
 .project {
@@ -910,7 +1054,7 @@ img {
 
   }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 
 .site-footer__section {
       display: inline-block;
@@ -944,7 +1088,7 @@ img {
     margin-bottom: 2.5rem;
   }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 
 .site-footer--has-b-margin-until-medium {
       margin-bottom: 0

@@ -34,12 +34,13 @@
 
   &__title {
     color: #fff;
-    font-weight: 500;
-    font-size: 2.4rem;
-    margin: 0;
+    font-weight: 400;
+    font-size: 2.8rem;
+    margin: 0 0 .5em;
     text-transform: uppercase;
 
-    @mixin atSmall {
+    @mixin atMedium {
+      font-weight: 500;
       font-size: 4.8rem;
     }
 
@@ -48,13 +49,13 @@
   &__subtitle {
     color: #fff;
     font-weight: 300;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     font-family: serif;
     letter-spacing: 5px;
     margin: 0;
     text-transform: uppercase;
 
-    @mixin atSmall {
+    @mixin atMedium {
       font-size: 2.9rem;
     }
   }

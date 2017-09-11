@@ -2,6 +2,7 @@
 @import "base/_global";
 @import "base/_variables";
 @import "base/_mixins";
+@import "vendor/lightslider.min";
 @import "modules/_large-hero";
 @import "modules/_btn";
 @import "modules/_wrapper";
@@ -15,5 +16,6 @@
 @import "modules/_features";
 @import "modules/_paragraph";
 @import "modules/_floorplans";
+@import "modules/_gallery";
 @import "modules/_form";
 @import "modules/_site-footer";

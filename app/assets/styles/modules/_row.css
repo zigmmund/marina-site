@@ -9,11 +9,10 @@
 
   &--has-negative-scale-until-medium {
     transform: scaleY(-1);
+  }
 
-    @mixin atMedium {
-      transform: scaleY(1);
-    }
-
+  &--centered-until-medium {
+    text-align: center
   }
 
   @mixin atMedium {
@@ -24,13 +23,9 @@
     }
 
     &--has-negative-scale-until-medium {
-      transform: scaleY(-1);
-
-      @mixin atMedium {
-        transform: scaleY(1);
-      }
-
+      transform: scaleY(1);
     }
+
 
     &--l-padding-small {
       padding-left: 100px;
@@ -38,6 +33,10 @@
 
     &--r-padding-small {
       padding-right: 100px;
+    }
+
+    &--centered-until-medium {
+      text-align: left;
     }
   }
 

@@ -1,0 +1,17 @@
+.gallery {
+  padding: 0;
+
+  @mixin atSmall {
+    padding: 4.8rem;
+  }
+
+  .lSPrev,
+  .lSNext {
+    display: none;
+
+    @mixin atSmall {
+      display: block;
+    }
+  }
+
+}

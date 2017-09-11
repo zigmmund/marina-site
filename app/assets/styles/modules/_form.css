@@ -1,6 +1,10 @@
 .form {
-  padding: 37.5px;
-  margin: 50px 0;
+  padding: 2rem 0;
+  /*margin: 50px 0;*/
+
+  @mixin atSmall {
+    padding: 2.5rem;
+  }
 
   &__text-input,
   &__select,
@@ -53,14 +57,24 @@
 
   &__last-name,
   &__phone {
-    float: left;
-    width: 45%;
+    float: none;
+    width: 100%;
+
+    @mixin atSmall {
+      float: left;
+      width: 45%;
+    }
   }
 
   &__first-name,
   &__country {
-    float: right;
-    width: 45%;
+    float: none;
+    width: 100%;
+
+    @mixin atSmall {
+      float: right;
+      width: 45%;
+    }
   }
 
   &__email,

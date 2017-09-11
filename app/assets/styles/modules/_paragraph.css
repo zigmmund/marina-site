@@ -25,7 +25,11 @@
   }
 
   &--has-b-margin {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
+
+    @mixin atSmall {
+      margin-bottom: 4rem;
+    }
   }
 
   &--has-b-margin-small {

@@ -69,7 +69,7 @@
   </div><!-- #project -->
 
   <div id="features" class="features page-section">
-    <div class="wrapper">
+    <div class="wrapper wrapper--narrow">
       <div class="features__item">
         <div class="features__text-content">
           <div class="features__numbers">4895</div>
@@ -138,16 +138,26 @@
     </div>
   </div><!-- #floorplans -->
 
-  <div id="gallery" class="page-section page-section--white">
-    <div class="wrapper">
-      <img src="assets/images/slider-image.jpg" alt="">
+  <div id="gallery" class="gallery page-section--white">
+    <div class="wrapper wrapper--no-padding-until-small">
+      <ul id="lightSlider">
+        <li class="gallery__item">
+          <img src="assets/images/slider-image.jpg" alt="">
+        </li>
+        <li class="gallery__item">
+          <img src="assets/images/algarve.jpg" alt="">
+        </li>
+        <li class="gallery__item">
+          <img src="assets/images/vilamoura.jpg" alt="">
+        </li>
+      </ul>
     </div>
   </div><!-- gallery -->
 
   <div id="architect" class="page-section page-section--lightgreen page-section--has-t-padding-until-medium">
     <div class="wrapper">
       <div class="row">
-        <div class="row__medium-6 row--r-padding-small">
+        <div class="row__medium-6 row--r-padding-small row--centered-until-medium">
           <img src="assets/images/vasco-vieira.jpg" alt="">
         </div>
         <div class="row__medium-6 row--l-padding-small">
@@ -160,7 +170,7 @@
   </div><!-- architect -->
 
   <div id="contact" class="page-section page-section--white">
-    <div class="wrapper wrapper--medium">
+    <div class="wrapper">
       <h2 class="headline headline--centered">Register Your Interest</h2>
 
       <form action="" class="form" method="post">
@@ -236,6 +246,8 @@
     src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous"></script>
+
+  <script src="assets/scripts/vendor/lightslider.min.js"></script>
 
   <script src="assets/scripts/app.js"></script>
 

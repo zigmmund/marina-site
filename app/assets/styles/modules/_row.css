@@ -1,5 +1,7 @@
 .row {
 
+  position: relative;
+
   @mixin clearfix;
 
   &--b-margin {

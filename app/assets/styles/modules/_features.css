@@ -1,16 +1,32 @@
 .features {
+  text-align: center;
+  /*position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: center;*/
 
   &__item {
     position: relative;
+    display: inline-block;
     height: 10rem;
     width: 10rem;
     text-align: center;
-    margin: 0 3rem;
-    border: 2px solid #22D9A1;
+    margin: 0 2rem 2rem;
+    border: 3px solid #22D9A1;
     color: #22D9A1;
+
+    @mixin atMedium {
+      margin-bottom: 0;
+
+    }
+    /*flex: 1;
+    flex-basis: 50%;
+
+    @mixin atSmall {
+      margin: 0 2rem;
+      flex-basis: 25%;
+    }*/
+
   }
 
   &__text-content {

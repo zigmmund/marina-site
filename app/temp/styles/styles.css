@@ -621,9 +621,26 @@ img {
   margin: 0 0 1rem;
 }
 
+.headline--small {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.125rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+
 .headline--centered {
     text-align: center;
   }
+
+.headline--has-t-margin {
+    margin-top: 3em;
+  }
+
+.row {
+
+  position: relative;
+
+}
 
 .row::after {
     content: '';
@@ -710,14 +727,15 @@ img {
     position: static;
     display: block;
     text-align: center;
-    font-size: 2.4rem;
+    font-size: 1.5rem;
     text-decoration: none;
     color: #fff;
   }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
 
 .site-header__logo {
+      font-size: 2.4rem;
       position: absolute;
       display: inline-block;
       left: auto;
@@ -734,9 +752,17 @@ img {
     width: 20px;
     height: 19px;
     position: absolute;
-    top: 30px;
+    top: 20px;
     right: 10px;
     z-index: 10;
+    cursor: pointer;
+  }
+
+@media (min-width: 992px) {
+
+.site-header__menu-icon {
+      top: 30px
+  }
   }
 
 .site-header__menu-icon::before {
@@ -832,7 +858,7 @@ img {
 @media (min-width: 1200px) {
 
 .primary-nav--pull-right {
-      display: block;
+      /*display: block;*/
       position: absolute;
       right: 0;
       top: 50%;
@@ -885,27 +911,40 @@ img {
   }
 
 .features {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
 
 }
 
+/*position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;*/
+
 .features__item {
     position: relative;
+    display: inline-block;
     height: 10rem;
     width: 10rem;
     text-align: center;
-    margin: 0 3rem;
-    border: 2px solid #22D9A1;
+    margin: 0 2rem 2rem;
+    border: 3px solid #22D9A1;
     color: #22D9A1;
+    /*flex: 1;
+    flex-basis: 50%;
+
+    @mixin atSmall {
+      margin: 0 2rem;
+      flex-basis: 25%;
+    }*/
+
+  }
+
+@media (min-width: 992px) {
+
+.features__item {
+      margin-bottom: 0
+
+  }
   }
 
 .features__text-content {
@@ -924,6 +963,24 @@ img {
 .features__units {
     text-transform: uppercase;
     font-weight: 500;
+  }
+
+.paragraph--centered {
+    text-align: center;
+  }
+
+.paragraph--narrow {
+    max-width: 40.75rem;
+    margin: 0 auto;
+  }
+
+.paragraph--extra-narrow {
+    max-width: 30rem;
+    margin: 0 auto;
+  }
+
+.paragraph--has-b-margin {
+    margin-bottom: 4rem;
   }
 
 .floorplans {

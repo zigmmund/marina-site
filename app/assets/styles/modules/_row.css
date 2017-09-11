@@ -1,5 +1,4 @@
 .row {
-
   position: relative;
 
   @mixin clearfix;
@@ -8,11 +7,29 @@
     margin-bottom: 3.875rem;
   }
 
+  &--has-negative-scale-until-medium {
+    transform: scaleY(-1);
+
+    @mixin atMedium {
+      transform: scaleY(1);
+    }
+
+  }
+
   @mixin atMedium {
 
     &__medium-6 {
       float: left;
       width: 50%;
+    }
+
+    &--has-negative-scale-until-medium {
+      transform: scaleY(-1);
+
+      @mixin atMedium {
+        transform: scaleY(1);
+      }
+
     }
 
     &--l-padding-small {

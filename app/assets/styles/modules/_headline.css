@@ -18,4 +18,26 @@
   &--has-t-margin {
     margin-top: 3em;
   }
+
+  &--has-t-padding-until-medium {
+    padding-top: 3.875rem;
+
+    @mixin atMedium {
+      padding-top: 0;
+    }
+
+  }
+
+  &--absolute-position-until-medium {
+    position: absolute;
+    top: -80px;
+    width: 100%;
+    text-align: center;
+
+    @mixin atMedium {
+      position: static;
+      top: auto;
+      text-align: left;
+    }
+  }
 }

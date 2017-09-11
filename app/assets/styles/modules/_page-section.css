@@ -12,4 +12,12 @@
   &--lightgreen {
     background-color: #E0FAF1;
   }
+
+  &--has-t-padding-until-medium {
+    padding-top: 100px;
+
+    @mixin atMedium {
+      padding-top: 4.5rem;
+    }
+  }
 }

@@ -1,5 +1,11 @@
 .paragraph {
 
+  font-size: .75rem;
+
+  @mixin atMedium {
+    font-size: 1rem;
+  }
+
   &--centered {
     text-align: center;
   }
@@ -10,11 +16,27 @@
   }
 
   &--extra-narrow {
-    max-width: 30rem;
-    margin: 0 auto;
+
+    @mixin atMedium {
+      max-width: 28rem;
+      margin: 0 auto;
+    }
+
   }
 
   &--has-b-margin {
     margin-bottom: 4rem;
+  }
+
+  &--has-b-margin-small {
+    margin-bottom: 1rem;
+  }
+
+  &--has-t-margin-until-medium {
+    margin-top: 2em;
+
+    @mixin atMedium {
+      margin-top: 1em;
+    }
   }
 }

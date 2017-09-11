@@ -1,9 +1,10 @@
 .wrapper {
-  padding: 0 18px;
+  padding: 0 54px;
   max-width: 976px;
   margin: 0 auto;
 
   @mixin atLarge {
+    padding: 0 18px;
     max-width: 1200px;
   }
 }

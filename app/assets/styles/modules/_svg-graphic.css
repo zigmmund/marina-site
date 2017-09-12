@@ -1,0 +1,159 @@
+.svg-graphic {
+  position: absolute;
+  z-index: 2;
+
+  &__large-hero-green-x {
+    top: 130px;
+    left: -23px;
+  }
+
+  &__large-hero-green-waves {
+    right: 140px;
+    top: 200px;
+  }
+
+  &__large-hero-red-arc {
+    bottom: 30px;
+    left: 30px;
+  }
+
+  &__large-hero-green-stripes {
+    bottom: 45px;
+    left: 360px;
+  }
+
+  &__large-hero-green-circle {
+    bottom: -23px;
+    right: 280px;
+    clip:rect(0px,46px,23px,0px);
+  }
+
+  &__large-hero-red-romb {
+    right: -38px;
+    bottom: 150px;
+  }
+
+  &__project-red-x {
+    right: -23px;
+    bottom: 100px;
+  }
+
+  &__project-green-waves {
+    left: 55px;
+    bottom: 80px;
+  }
+
+  &__features-red-romb {
+    left: -36px;
+    top: 70px;
+  }
+
+  &__features-green-circle {
+    bottom: -23px;
+    left: 330px;
+  }
+
+  &__features-red-arc-reverse {
+    right: 30px;
+    bottom: -30px;
+  }
+
+  &__location-green-stripes-reverse {
+    top: 223px;
+    left: 58px;
+  }
+
+  &__location-green-x {
+    right: 150px;
+    top: 185px;
+  }
+
+  &__location-red-romb {
+    left: 50%;
+    top: 60%;
+    transform: translate(-38px, -38px);
+  }
+
+  &__floorplans-green-stripes {
+    top: 42%;
+    left: 15%;
+  }
+
+  &__floorplans-red-arc-reverse {
+    top: -31px;
+    left: 28%;
+  }
+
+  &__floorplans-green-circle {
+    right: -39px;
+    top: 35%;
+  }
+
+  &__floorplans-red-romb {
+    bottom: -38px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__gallery-green-waves {
+    top: 5.5%;
+    left: 5.5%;
+  }
+
+  &__gallery-red-x {
+    right: -23px;
+    bottom: 100px;
+  }
+
+  &__gallery-green-circle {
+    left: 35%;
+    bottom: 2.5%;
+  }
+
+  &__architect-green-x {
+    top: 130px;
+    left: -23px;
+  }
+
+  &__architect-red-waves {
+    top: 10%;
+    right: 5%;
+  }
+
+  &__architect-green-stripes {
+    bottom: -20px;
+    left: 23%;
+  }
+
+  &__acrhitect-green-romb {
+    right: -37px;
+    bottom: 15%;
+  }
+
+  &__architect-logo {
+    left: 50%;
+    bottom: -80px;
+    transform: translateX(-50%);
+  }
+
+  &__contact-green-circle {
+    top: 10%;
+    right: 15%;
+  }
+
+  &__contact-green-waves {
+    left: 5%;
+    bottom: 45%;
+  }
+
+  &__contact-red-x {
+    bottom: 13%;
+    right: 5%;
+  }
+
+  &__contact-red-arc-reverse {
+    left: 0;
+    top: 8%;
+    transform: rotate(180deg);
+  }
+}

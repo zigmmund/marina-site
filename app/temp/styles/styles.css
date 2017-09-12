@@ -461,6 +461,7 @@ body {
   color: #29296D;
   background-color: #29296D;
   padding: 1rem;
+  overflow-x: hidden;
   min-width: 375px;
 }
 
@@ -598,7 +599,7 @@ img {
   position: relative;
   width: 100%;
   height: 100vh;
-  overflow: hidden;
+  /*overflow: hidden;*/
   background: url("../../assets/images/hero--large.jpg") center center no-repeat;
   background-size: cover;
 
@@ -733,6 +734,7 @@ img {
 
 .page-section {
   padding: 2.4rem 0;
+  position: relative;
 }
 
 @media (min-width: 992px) {
@@ -1103,7 +1105,7 @@ img {
     text-transform: uppercase;
     color: #fff;
     font-size: .9375rem;
-    padding: .6rem;
+    padding: .6rem 1.2rem;
     font-weight: 500;
   }
 
@@ -1265,6 +1267,7 @@ img {
 
 .gallery {
   padding: 0;
+  position: relative;
 
 }
 
@@ -1295,12 +1298,10 @@ img {
 
 }
 
-/*margin: 50px 0;*/
-
 @media (min-width: 768px) {
 
 .form {
-    padding: 2.5rem
+    padding: 2.5rem 7.5rem
 
 
 }
@@ -1447,7 +1448,7 @@ img {
 @media (min-width: 1200px) {
 
 .location__pin {
-      left: 47.3%;
+      left: 48%;
       bottom: 51%
   }
   }
@@ -1564,4 +1565,168 @@ img {
     font-size: .75rem;
     text-transform: uppercase;
     letter-spacing: 0.3125rem;
+  }
+
+.svg-graphic {
+  position: absolute;
+  z-index: 2;
+}
+
+.svg-graphic__large-hero-green-x {
+    top: 130px;
+    left: -23px;
+  }
+
+.svg-graphic__large-hero-green-waves {
+    right: 140px;
+    top: 200px;
+  }
+
+.svg-graphic__large-hero-red-arc {
+    bottom: 30px;
+    left: 30px;
+  }
+
+.svg-graphic__large-hero-green-stripes {
+    bottom: 45px;
+    left: 360px;
+  }
+
+.svg-graphic__large-hero-green-circle {
+    bottom: -23px;
+    right: 280px;
+    clip:rect(0px,46px,23px,0px);
+  }
+
+.svg-graphic__large-hero-red-romb {
+    right: -38px;
+    bottom: 150px;
+  }
+
+.svg-graphic__project-red-x {
+    right: -23px;
+    bottom: 100px;
+  }
+
+.svg-graphic__project-green-waves {
+    left: 55px;
+    bottom: 80px;
+  }
+
+.svg-graphic__features-red-romb {
+    left: -36px;
+    top: 70px;
+  }
+
+.svg-graphic__features-green-circle {
+    bottom: -23px;
+    left: 330px;
+  }
+
+.svg-graphic__features-red-arc-reverse {
+    right: 30px;
+    bottom: -30px;
+  }
+
+.svg-graphic__location-green-stripes-reverse {
+    top: 223px;
+    left: 58px;
+  }
+
+.svg-graphic__location-green-x {
+    right: 150px;
+    top: 185px;
+  }
+
+.svg-graphic__location-red-romb {
+    left: 50%;
+    top: 60%;
+    -webkit-transform: translate(-38px, -38px);
+            transform: translate(-38px, -38px);
+  }
+
+.svg-graphic__floorplans-green-stripes {
+    top: 42%;
+    left: 15%;
+  }
+
+.svg-graphic__floorplans-red-arc-reverse {
+    top: -31px;
+    left: 28%;
+  }
+
+.svg-graphic__floorplans-green-circle {
+    right: -39px;
+    top: 35%;
+  }
+
+.svg-graphic__floorplans-red-romb {
+    bottom: -38px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+
+.svg-graphic__gallery-green-waves {
+    top: 5.5%;
+    left: 5.5%;
+  }
+
+.svg-graphic__gallery-red-x {
+    right: -23px;
+    bottom: 100px;
+  }
+
+.svg-graphic__gallery-green-circle {
+    left: 35%;
+    bottom: 2.5%;
+  }
+
+.svg-graphic__architect-green-x {
+    top: 130px;
+    left: -23px;
+  }
+
+.svg-graphic__architect-red-waves {
+    top: 10%;
+    right: 5%;
+  }
+
+.svg-graphic__architect-green-stripes {
+    bottom: -20px;
+    left: 23%;
+  }
+
+.svg-graphic__acrhitect-green-romb {
+    right: -37px;
+    bottom: 15%;
+  }
+
+.svg-graphic__architect-logo {
+    left: 50%;
+    bottom: -80px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+
+.svg-graphic__contact-green-circle {
+    top: 10%;
+    right: 15%;
+  }
+
+.svg-graphic__contact-green-waves {
+    left: 5%;
+    bottom: 45%;
+  }
+
+.svg-graphic__contact-red-x {
+    bottom: 13%;
+    right: 5%;
+  }
+
+.svg-graphic__contact-red-arc-reverse {
+    left: 0;
+    top: 8%;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
   }

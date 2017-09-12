@@ -9,6 +9,7 @@ body {
   color: #29296D;
   background-color: #29296D;
   padding: 1rem;
+  overflow-x: hidden;
   min-width: 375px;
 }
 

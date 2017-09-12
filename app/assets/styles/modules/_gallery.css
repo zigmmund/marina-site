@@ -1,5 +1,6 @@
 .gallery {
   padding: 0;
+  position: relative;
 
   @mixin atSmall {
     padding: 4.8rem;

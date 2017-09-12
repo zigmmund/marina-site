@@ -1,9 +1,8 @@
 .form {
   padding: 2rem 0;
-  /*margin: 50px 0;*/
 
   @mixin atSmall {
-    padding: 2.5rem;
+    padding: 2.5rem 7.5rem;
   }
 
   &__text-input,

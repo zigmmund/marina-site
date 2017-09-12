@@ -1,159 +1,315 @@
 .svg-graphic {
   position: absolute;
   z-index: 2;
+  display: none;
 
-  &__large-hero-green-x {
-    top: 130px;
-    left: -23px;
+  @mixin atSmall {
+    display: block;
+
+    &__large-hero-green-x {
+      top: 15%;
+      left: 8%;
+      width: 63px;
+    }
+
+    &__large-hero-green-waves {
+      right: 8%;
+      top: 20%;
+      width: 60px;
+    }
+
+    &__large-hero-red-arc,
+    &__large-hero-red-romb,
+    &__large-hero-green-stripes,
+    &__project-red-x,
+    &__project-green-waves,
+    &__features-red-romb,
+    &__features-green-circle,
+    &__features-red-arc-reverse,
+    &__location-green-stripes-reverse,
+    &__floorplans-green-stripes,
+    &__floorplans-green-circle,
+    &__floorplans-red-romb,
+    &__gallery-green-waves,
+    &__gallery-red-x,
+    &__architect-green-x,
+    &__architect-green-stripes,
+    &__contact-green-circle,
+    &__contact-green-waves,
+    &__contact-red-x,
+    &__contact-red-arc-reverse {
+      display: none;
+    }
+
+    &__large-hero-red-x {
+      right: 4%;
+      bottom: 10%;
+      width: 63px;
+    }
+
+    &__large-hero-green-circle {
+      top: 56%;
+      right: 15%;
+      width: 36px;
+      height: 36px;
+    }
+
+    &__project-green-circle {
+      right: -33px;
+      bottom: 22%;
+      width: 36px;
+    }
+
+    &__project-green-stripes {
+      width: 63px;
+      bottom: -30px;
+      left: 17%;
+    }
+
+    &__project-red-romb {
+      width: 56px;
+      left: -28px;
+      top: 25%;
+    }
+
+    &__features-green-x {
+      width: 63px;
+      right: -27px;
+      bottom: 35%;
+    }
+
+    &__location-green-circle {
+      top: 4%;
+      left: 6%;
+      width: 36px;
+    }
+
+    &__location-red-romb {
+      right: 4%;
+      top: 2%;
+      width: 56px;
+    }
+
+    &__location-green-x {
+      right: -31px;
+      top: 38%;
+      width: 63px;
+    }
+
+    &__location-green-waves {
+      width: 60px;
+      left: -17px;
+      bottom: 46%;
+    }
+
+    &__location-red-x {
+      width: 63px;
+      right: 22px;
+      bottom: 10.2%;
+    }
+
+    &__floorplans-red-arc-reverse {
+      width: 62px;
+      transform: rotate(180deg);
+      left: -22px;
+      top: 50%;
+    }
+
+    &__gallery-red-circle {
+      width: 36px;
+      top: 35%;
+      right: 12%;
+    }
+
+    &__gallery-green-stripes {
+      width: 63px;
+      left: -14px;
+      bottom: 2%;
+    }
+
+    &__architect-green-romb {
+      width: 56px;
+      right: -27px;
+      top: 25%;
+    }
+
+    &__architect-red-x {
+      width: 63px;
+      left: 5%;
+      bottom: 15%;
+    }
+
+    &__architect-red-waves {
+      width: 60px;
+      right: -16px;
+      bottom: 10%;
+    }
+
+    &__architect-logo {
+      left: 50%;
+      transform: translateX(-50%);
+
+    }
+
   }
 
-  &__large-hero-green-waves {
-    right: 140px;
-    top: 200px;
-  }
 
-  &__large-hero-red-arc {
-    bottom: 30px;
-    left: 30px;
-  }
+  @mixin atMedium {
+    display: block;
 
-  &__large-hero-green-stripes {
-    bottom: 45px;
-    left: 360px;
-  }
+    &__large-hero-green-x {
+      top: 130px;
+      left: -23px;
+    }
 
-  &__large-hero-green-circle {
-    bottom: -23px;
-    right: 280px;
-    clip:rect(0px,46px,23px,0px);
-  }
+    &__large-hero-green-waves {
+      right: 140px;
+      top: 200px;
+    }
 
-  &__large-hero-red-romb {
-    right: -38px;
-    bottom: 150px;
-  }
+    &__large-hero-red-arc {
+      bottom: 30px;
+      left: 30px;
+    }
 
-  &__project-red-x {
-    right: -23px;
-    bottom: 100px;
-  }
+    &__large-hero-green-stripes {
+      bottom: 45px;
+      left: 360px;
+    }
 
-  &__project-green-waves {
-    left: 55px;
-    bottom: 80px;
-  }
+    &__large-hero-green-circle {
+      bottom: -23px;
+      right: 280px;
+      clip:rect(0px,46px,23px,0px);
+    }
 
-  &__features-red-romb {
-    left: -36px;
-    top: 70px;
-  }
+    &__large-hero-red-romb {
+      right: -38px;
+      bottom: 150px;
+    }
 
-  &__features-green-circle {
-    bottom: -23px;
-    left: 330px;
-  }
+    &__project-red-x {
+      right: -23px;
+      bottom: 100px;
+    }
 
-  &__features-red-arc-reverse {
-    right: 30px;
-    bottom: -30px;
-  }
+    &__project-green-waves {
+      left: 55px;
+      bottom: 80px;
+    }
 
-  &__location-green-stripes-reverse {
-    top: 223px;
-    left: 58px;
-  }
+    &__features-red-romb {
+      left: -36px;
+      top: 70px;
+    }
 
-  &__location-green-x {
-    right: 150px;
-    top: 185px;
-  }
+    &__features-green-circle {
+      bottom: -23px;
+      left: 330px;
+    }
 
-  &__location-red-romb {
-    left: 50%;
-    top: 60%;
-    transform: translate(-38px, -38px);
-  }
+    &__features-red-arc-reverse {
+      right: 30px;
+      bottom: -30px;
+    }
 
-  &__floorplans-green-stripes {
-    top: 42%;
-    left: 15%;
-  }
+    &__location-green-stripes-reverse {
+      top: 223px;
+      left: 58px;
+    }
 
-  &__floorplans-red-arc-reverse {
-    top: -31px;
-    left: 28%;
-  }
+    &__location-green-x {
+      right: 150px;
+      top: 185px;
+    }
 
-  &__floorplans-green-circle {
-    right: -39px;
-    top: 35%;
-  }
+    &__location-red-romb {
+      left: 50%;
+      top: 60%;
+      transform: translate(-38px, -38px);
+    }
 
-  &__floorplans-red-romb {
-    bottom: -38px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
+    &__floorplans-green-stripes {
+      top: 42%;
+      left: 15%;
+    }
 
-  &__gallery-green-waves {
-    top: 5.5%;
-    left: 5.5%;
-  }
+    &__floorplans-red-arc-reverse {
+      top: -31px;
+      left: 28%;
+    }
 
-  &__gallery-red-x {
-    right: -23px;
-    bottom: 100px;
-  }
+    &__floorplans-green-circle {
+      right: -39px;
+      top: 35%;
+    }
 
-  &__gallery-green-circle {
-    left: 35%;
-    bottom: 2.5%;
-  }
+    &__floorplans-red-romb {
+      bottom: -38px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
 
-  &__architect-green-x {
-    top: 130px;
-    left: -23px;
-  }
+    &__gallery-green-waves {
+      top: 5.5%;
+      left: 5.5%;
+    }
 
-  &__architect-red-waves {
-    top: 10%;
-    right: 5%;
-  }
+    &__gallery-red-x {
+      right: -23px;
+      bottom: 100px;
+    }
 
-  &__architect-green-stripes {
-    bottom: -20px;
-    left: 23%;
-  }
+    &__gallery-green-circle {
+      left: 35%;
+      bottom: 2.5%;
+    }
 
-  &__acrhitect-green-romb {
-    right: -37px;
-    bottom: 15%;
-  }
+    &__architect-green-x {
+      top: 130px;
+      left: -23px;
+    }
 
-  &__architect-logo {
-    left: 50%;
-    bottom: -80px;
-    transform: translateX(-50%);
-  }
+    &__architect-red-waves {
+      top: 10%;
+      right: 5%;
+    }
 
-  &__contact-green-circle {
-    top: 10%;
-    right: 15%;
-  }
+    &__architect-green-stripes {
+      bottom: -20px;
+      left: 23%;
+    }
 
-  &__contact-green-waves {
-    left: 5%;
-    bottom: 45%;
-  }
+    &__acrhitect-green-romb {
+      right: -37px;
+      bottom: 15%;
+    }
 
-  &__contact-red-x {
-    bottom: 13%;
-    right: 5%;
-  }
+    &__architect-logo {
+      left: 50%;
+      bottom: -80px;
+      transform: translateX(-50%);
+    }
 
-  &__contact-red-arc-reverse {
-    left: 0;
-    top: 8%;
-    transform: rotate(180deg);
+    &__contact-green-circle {
+      top: 10%;
+      right: 15%;
+    }
+
+    &__contact-green-waves {
+      left: 5%;
+      bottom: 45%;
+    }
+
+    &__contact-red-x {
+      bottom: 13%;
+      right: 5%;
+    }
+
+    &__contact-red-arc-reverse {
+      left: 0;
+      top: 8%;
+      transform: rotate(180deg);
+    }
   }
 }

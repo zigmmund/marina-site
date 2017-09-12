@@ -1,7 +1,7 @@
 .form {
   padding: 2rem 0;
 
-  @mixin atSmall {
+  @mixin atMedium {
     padding: 2.5rem 7.5rem;
   }
 

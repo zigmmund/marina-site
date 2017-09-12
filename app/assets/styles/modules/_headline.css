@@ -2,7 +2,7 @@
   font-weight: 300;
   font-family: serif;
   font-size: 2.4rem;
-  margin: 0 0 1rem;
+  margin: 0 0 1em;
 
   @mixin atSmall {
     font-size: 3rem;

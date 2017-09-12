@@ -17,8 +17,8 @@
 
   &--extra-narrow {
 
-    @mixin atMedium {
-      max-width: 28rem;
+    @mixin atSmall {
+      max-width: 30.75rem;
       margin: 0 auto;
     }
 

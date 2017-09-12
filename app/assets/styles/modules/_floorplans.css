@@ -9,7 +9,7 @@
     transform: translate(-50%, -50%);
     width: 80%;
 
-    @mixin atMedium {
+    @mixin atSmall {
       width: auto;
       transform: translate(0, -50%);
     }

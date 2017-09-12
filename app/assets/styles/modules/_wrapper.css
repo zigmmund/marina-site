@@ -1,16 +1,36 @@
 .wrapper {
-  padding: 0 3.375rem;
+  padding: 0 6.6rem;
   max-width: 976px;
   margin: 0 auto;
 
+  @mixin atMedium {
+    padding: 0 3.375rem;
+  }
+
   &--narrow {
     padding: 0 1.125rem;
+  }
+
+  &--narrow-until-medium {
+    padding: 0 9.9rem;
+
+    @mixin atMedium {
+      padding: 0 3.385rem;
+    }
   }
 
   &--no-padding-until-small {
     padding: 0;
 
     @mixin atSmall {
+      padding: 0 3.375rem;
+    }
+  }
+
+  &--no-padding-until-medium {
+    padding: 0;
+
+    @mixin atMedium {
       padding: 0 3.375rem;
     }
   }

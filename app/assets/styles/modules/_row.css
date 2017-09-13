@@ -59,17 +59,4 @@
     }
   }
 
-  @mixin atLarge {
-
-    &__large-8 {
-      float: left;
-      width: 66.66%;
-    }
-
-    &__large-4 {
-      width: 33.33%;
-      float: left;
-    }
-  }
-
 }

@@ -3,10 +3,6 @@
   max-width: 1236px;
   margin: 0 auto;
 
-  /*@mixin atMedium {
-    padding: 0 3.375rem;
-  }*/
-
   &--medium {
     max-width: 976px;
   }
@@ -50,10 +46,6 @@
 
   &--has-4x-padding-until-medium {
     padding: 0 72px;
-
-    @mixin atMedium {
-      padding: 0 18px;
-    }
   }
 
   &--has-10x-padding-until-medium {
@@ -64,8 +56,18 @@
     }
   }
 
+  &--has-double-padding-until-large {
+
+    @mixin atMedium {
+      padding: 0 36px
+    }
+
+    @mixin atLarge {
+      padding: 0 18px;
+    }
+  }
+
   @mixin atLarge {
-    padding: 0 1.125rem;
     max-width: 1200px;
   }
 }

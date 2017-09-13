@@ -14,7 +14,7 @@
     list-style: none;
     display: none;
 
-    @mixin atMedium {
+    @mixin atLarge {
       display: inline-block;
     }
   }

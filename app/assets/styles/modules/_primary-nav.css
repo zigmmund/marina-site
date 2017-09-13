@@ -10,7 +10,6 @@
   &--pull-right {
 
     @mixin atLarge {
-      /*display: block;*/
       position: absolute;
       right: 0;
       top: 50%;
@@ -30,6 +29,9 @@
 
     @mixin atMedium {
       display: inline-block;
+    }
+
+    @mixin atLarge {
       margin-bottom: 0;
     }
   }
@@ -45,8 +47,12 @@
     text-transform: uppercase;
     color: #fff;
     font-size: .9375rem;
-    padding: .6rem 1.2rem;
+    padding: .6rem .8rem;
     font-weight: 500;
+
+    @mixin atExtraLarge {
+      padding: .6rem 1.2rem;
+    }
   }
 
 }

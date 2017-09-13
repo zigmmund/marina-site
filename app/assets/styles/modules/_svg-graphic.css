@@ -136,6 +136,7 @@
 
   @mixin atMedium {
     display: block;
+    transform: scale(.8);
 
     &__large-hero-green-x {
       top: 18%;
@@ -143,8 +144,8 @@
     }
 
     &__large-hero-green-waves {
-      right: 140px;
-      top: 200px;
+      right: 9%;
+      top: 30%;
     }
 
     &__large-hero-red-arc {
@@ -153,17 +154,20 @@
     }
 
     &__large-hero-green-stripes {
-      bottom: 45px;
-      left: 360px;
+      bottom: 10%;
+      left: 25.5%;
     }
 
     &__large-hero-green-circle {
       top: auto;
-      width: 46px;
-      height: 46px;
       bottom: -23px;
       right: 280px;
       clip:rect(0px,46px,23px,0px);
+    }
+
+    &__large-hero-red-romb {
+      right: -38px;
+      bottom: 22%;
     }
 
     &__large-hero-red-x,
@@ -171,21 +175,20 @@
     &__project-green-stripes,
     &__project-green-circle,
     &__features-green-x,
+    &__features-red-arc,
     &__location-green-circle,
     &__location-red-x,
     &__gallery-red-circle,
-    &__gallery-green-stripes {
+    &__gallery-green-stripes,
+    &__gallery-green-waves,
+    &__architect-red-x,
+    &__contact-red-arc {
       display: none;
-    }
-
-    &__large-hero-red-romb {
-      right: -38px;
-      bottom: 150px;
     }
 
     &__project-red-x {
       right: -23px;
-      bottom: 100px;
+      bottom: 25%;
     }
 
     &__project-green-waves {
@@ -204,37 +207,37 @@
     }
 
     &__features-red-arc {
-      transform: rotateY(180deg);
+      transform: rotateY(180deg) scale(.8);
       right: 30px;
       bottom: -30px;
     }
 
     &__location-green-stripes {
-      transform: rotateY(180deg);
+      transform: rotateY(180deg) scale(.8);
       top: 223px;
       left: 58px;
     }
 
     &__location-green-x {
-      right: 150px;
+      right: 18px;
       top: 185px;
     }
 
     &__location-red-romb {
       left: 50%;
-      top: 60%;
-      transform: translate(-38px, -38px);
+      top: 59%;
+      transform: translate(-38px, -38px) scale(.8);
     }
 
     &__floorplans-green-stripes {
       top: 42%;
-      left: 15%;
+      left: 10%;
     }
 
     &__floorplans-red-arc {
       top: -31px;
-      left: 28%;
-      transform: rotateY(180deg);
+      left: 23%;
+      transform: rotateY(180deg) scale(.8);
     }
 
     &__floorplans-green-circle {
@@ -245,12 +248,7 @@
     &__floorplans-red-romb {
       bottom: -38px;
       left: 50%;
-      transform: translateX(-50%);
-    }
-
-    &__gallery-green-waves {
-      top: 13.5%;
-      left: 5.5%;
+      transform: translateX(-50%) scale(.8);
     }
 
     &__gallery-red-x {
@@ -286,7 +284,7 @@
     &__architect-logo {
       left: 50%;
       bottom: -80px;
-      transform: translateX(-50%);
+      transform: translateX(-50%) scale(.8);
     }
 
     &__contact-green-circle {
@@ -307,25 +305,60 @@
     &__contact-red-arc {
       left: 0;
       top: 8%;
-      transform: rotateX(180deg);
+      transform: rotateX(180deg) scale(.8);
     }
   }
 
   @mixin atLarge {
+    display: block;
 
-    &__large-hero-green-x,
+    &__large-hero-red-x,
+    &__project-green-circle,
+    &__project-red-romb,
+    &__project-green-stripes,
+    &__features-green-x,
+    &__location-green-circle,
+    &__location-red-x,
+    &__gallery-red-circle,
+    &__gallery-green-stripes,
+    &__architect-red-x,
+    &__location-green-waves {
+      display: none;
+    }
+
+    &__large-hero-green-x {
+      left: -27px;
+    }
+
+    &__features-red-romb {
+      left: -42px;
+    }
+
+    &__location-green-stripes {
+      top: 316px;
+      left: 33px;
+    }
+
     &__location-green-x {
-      width: 83px;
+      right: 7%;
+      top: 20%;
     }
 
-    &__large-hero-green-waves,
-    &__architect-red-waves {
-      width: 80px;
+    &__floorplans-red-romb {
+      left: 50%;
     }
 
-    &__location-red-romb,
-    &__architect-green-romb {
-      width: 76px;
+    &__gallery-green-waves {
+      top: 5.5%;
+      left: 7.5%;
+    }
+
+    &__gallery-green-circle {
+      bottom: 2%;
+    }
+
+    &__contact-red-arc {
+      left: -9px;
     }
 
     &__contact-green-circle {
@@ -336,26 +369,15 @@
       bottom: 20%;
     }
 
-    &__architect-red-x,
-    &__location-green-waves {
-      display: none;
-    }
-
     &__architect-green-romb {
       top: 50%;
       right: -37px;
     }
 
-    &__floorplans-red-romb {
-      left: 63%;
-    }
-
-    &__gallery-green-waves {
-      top: 12.5%;
-    }
   }
 
   @mixin atExtraLarge {
+    transform: scale(1);
 
     &__gallery-green-stripes {
       display: block;

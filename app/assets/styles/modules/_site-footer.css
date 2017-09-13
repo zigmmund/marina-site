@@ -42,6 +42,10 @@
 
   &__info {
     font-size: .75rem;
+
+    @mixin atMedium {
+      font-size: .875rem;
+    }
   }
 
   &__title {

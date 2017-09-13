@@ -30,6 +30,10 @@
       margin: 0 auto;
     }
 
+    @mixin atLarge {
+      max-width: 25rem;
+    }
+
   }
 
   &--has-b-margin {

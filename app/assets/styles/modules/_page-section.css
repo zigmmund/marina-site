@@ -21,14 +21,10 @@
     }
   }
 
-  &--has-double-t-padding-at-small {
+  &--has-double-t-padding-until-large {
 
     @mixin atSmall {
       padding-top: 9.6rem;
-    }
-
-    @mixin atMedium {
-      padding-top: 4.6rem;
     }
   }
 

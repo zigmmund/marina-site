@@ -25,8 +25,8 @@
     &__project-green-waves,
     &__features-red-romb,
     &__features-green-circle,
-    &__features-red-arc-reverse,
-    &__location-green-stripes-reverse,
+    &__features-red-arc,
+    &__location-green-stripes,
     &__floorplans-green-stripes,
     &__floorplans-green-circle,
     &__floorplans-red-romb,
@@ -37,7 +37,7 @@
     &__contact-green-circle,
     &__contact-green-waves,
     &__contact-red-x,
-    &__contact-red-arc-reverse {
+    &__contact-red-arc {
       display: none;
     }
 
@@ -61,6 +61,7 @@
     }
 
     &__project-green-stripes {
+      transform: rotateY(180deg);
       width: 63px;
       bottom: -30px;
       left: 17%;
@@ -108,9 +109,9 @@
       bottom: 10.2%;
     }
 
-    &__floorplans-red-arc-reverse {
+    &__floorplans-red-arc {
       width: 62px;
-      transform: rotate(180deg);
+      transform: rotateX(180deg);
       left: -22px;
       top: 50%;
     }
@@ -158,7 +159,7 @@
     display: block;
 
     &__large-hero-green-x {
-      top: 130px;
+      top: 18%;
       left: -23px;
     }
 
@@ -178,9 +179,24 @@
     }
 
     &__large-hero-green-circle {
+      top: auto;
+      width: 46px;
+      height: 46px;
       bottom: -23px;
       right: 280px;
       clip:rect(0px,46px,23px,0px);
+    }
+
+    &__large-hero-red-x,
+    &__project-red-romb,
+    &__project-green-stripes,
+    &__project-green-circle,
+    &__features-green-x,
+    &__location-green-circle,
+    &__location-red-x,
+    &__gallery-red-circle,
+    &__gallery-green-stripes {
+      display: none;
     }
 
     &__large-hero-red-romb {
@@ -208,12 +224,14 @@
       left: 330px;
     }
 
-    &__features-red-arc-reverse {
+    &__features-red-arc {
+      transform: rotateY(180deg);
       right: 30px;
       bottom: -30px;
     }
 
-    &__location-green-stripes-reverse {
+    &__location-green-stripes {
+      transform: rotateY(180deg);
       top: 223px;
       left: 58px;
     }
@@ -234,9 +252,10 @@
       left: 15%;
     }
 
-    &__floorplans-red-arc-reverse {
+    &__floorplans-red-arc {
       top: -31px;
       left: 28%;
+      transform: rotateY(180deg);
     }
 
     &__floorplans-green-circle {
@@ -251,18 +270,18 @@
     }
 
     &__gallery-green-waves {
-      top: 5.5%;
+      top: 13.5%;
       left: 5.5%;
     }
 
     &__gallery-red-x {
       right: -23px;
-      bottom: 100px;
+      bottom: 15%;
     }
 
     &__gallery-green-circle {
       left: 35%;
-      bottom: 2.5%;
+      bottom: 6%;
     }
 
     &__architect-green-x {
@@ -306,10 +325,61 @@
       right: 5%;
     }
 
-    &__contact-red-arc-reverse {
+    &__contact-red-arc {
       left: 0;
       top: 8%;
-      transform: rotate(180deg);
+      transform: rotateX(180deg);
+    }
+  }
+
+  @mixin atLarge {
+
+    &__large-hero-green-x,
+    &__location-green-x {
+      width: 83px;
+    }
+
+    &__large-hero-green-waves,
+    &__architect-red-waves {
+      width: 80px;
+    }
+
+    &__location-red-romb,
+    &__architect-green-romb {
+      width: 76px;
+    }
+
+    &__contact-green-circle {
+      top: 20%;
+    }
+
+    &__contact-red-x {
+      bottom: 20%;
+    }
+
+    &__architect-red-x,
+    &__location-green-waves {
+      display: none;
+    }
+
+    &__architect-green-romb {
+      top: 50%;
+      right: -37px;
+    }
+
+    &__floorplans-red-romb {
+      left: 63%;
+    }
+
+    &__gallery-green-waves {
+      top: 12.5%;
+    }
+  }
+
+  @mixin atExtraLarge {
+
+    &__gallery-green-stripes {
+      display: block;
     }
   }
 }

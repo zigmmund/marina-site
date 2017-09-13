@@ -774,6 +774,10 @@ img {
   }
 
 .page-section--wide {
+    padding: 9.6rem 0;
+  }
+
+.page-section--with-with-less-b-padding {
     padding: 9.6rem 0 4.8rem;
   }
 
@@ -916,6 +920,19 @@ img {
 
     .row--centered-until-medium {
       text-align: left;
+    }
+  }
+
+@media (min-width: 1200px) {
+
+    .row__large-8 {
+      float: left;
+      width: 66.66%;
+    }
+
+    .row__large-4 {
+      width: 33.33%;
+      float: left;
     }
   }
 
@@ -1297,20 +1314,6 @@ img {
   }
   }
 
-.gallery {
-  padding: 0;
-  position: relative;
-
-}
-
-@media (min-width: 768px) {
-
-.gallery {
-    padding: 4.8rem
-
-}
-  }
-
 .gallery .lSPrev,
   .gallery .lSNext {
     display: none;
@@ -1630,8 +1633,8 @@ img {
     .svg-graphic__project-green-waves,
     .svg-graphic__features-red-romb,
     .svg-graphic__features-green-circle,
-    .svg-graphic__features-red-arc-reverse,
-    .svg-graphic__location-green-stripes-reverse,
+    .svg-graphic__features-red-arc,
+    .svg-graphic__location-green-stripes,
     .svg-graphic__floorplans-green-stripes,
     .svg-graphic__floorplans-green-circle,
     .svg-graphic__floorplans-red-romb,
@@ -1642,7 +1645,7 @@ img {
     .svg-graphic__contact-green-circle,
     .svg-graphic__contact-green-waves,
     .svg-graphic__contact-red-x,
-    .svg-graphic__contact-red-arc-reverse {
+    .svg-graphic__contact-red-arc {
       display: none;
     }
 
@@ -1666,6 +1669,8 @@ img {
     }
 
     .svg-graphic__project-green-stripes {
+      -webkit-transform: rotateY(180deg);
+              transform: rotateY(180deg);
       width: 63px;
       bottom: -30px;
       left: 17%;
@@ -1713,10 +1718,10 @@ img {
       bottom: 10.2%;
     }
 
-    .svg-graphic__floorplans-red-arc-reverse {
+    .svg-graphic__floorplans-red-arc {
       width: 62px;
-      -webkit-transform: rotate(180deg);
-              transform: rotate(180deg);
+      -webkit-transform: rotateX(180deg);
+              transform: rotateX(180deg);
       left: -22px;
       top: 50%;
     }
@@ -1766,7 +1771,7 @@ img {
 }
 
     .svg-graphic__large-hero-green-x {
-      top: 130px;
+      top: 18%;
       left: -23px;
     }
 
@@ -1786,9 +1791,24 @@ img {
     }
 
     .svg-graphic__large-hero-green-circle {
+      top: auto;
+      width: 46px;
+      height: 46px;
       bottom: -23px;
       right: 280px;
       clip:rect(0px,46px,23px,0px);
+    }
+
+    .svg-graphic__large-hero-red-x,
+    .svg-graphic__project-red-romb,
+    .svg-graphic__project-green-stripes,
+    .svg-graphic__project-green-circle,
+    .svg-graphic__features-green-x,
+    .svg-graphic__location-green-circle,
+    .svg-graphic__location-red-x,
+    .svg-graphic__gallery-red-circle,
+    .svg-graphic__gallery-green-stripes {
+      display: none;
     }
 
     .svg-graphic__large-hero-red-romb {
@@ -1816,12 +1836,16 @@ img {
       left: 330px;
     }
 
-    .svg-graphic__features-red-arc-reverse {
+    .svg-graphic__features-red-arc {
+      -webkit-transform: rotateY(180deg);
+              transform: rotateY(180deg);
       right: 30px;
       bottom: -30px;
     }
 
-    .svg-graphic__location-green-stripes-reverse {
+    .svg-graphic__location-green-stripes {
+      -webkit-transform: rotateY(180deg);
+              transform: rotateY(180deg);
       top: 223px;
       left: 58px;
     }
@@ -1843,9 +1867,11 @@ img {
       left: 15%;
     }
 
-    .svg-graphic__floorplans-red-arc-reverse {
+    .svg-graphic__floorplans-red-arc {
       top: -31px;
       left: 28%;
+      -webkit-transform: rotateY(180deg);
+              transform: rotateY(180deg);
     }
 
     .svg-graphic__floorplans-green-circle {
@@ -1861,18 +1887,18 @@ img {
     }
 
     .svg-graphic__gallery-green-waves {
-      top: 5.5%;
+      top: 13.5%;
       left: 5.5%;
     }
 
     .svg-graphic__gallery-red-x {
       right: -23px;
-      bottom: 100px;
+      bottom: 15%;
     }
 
     .svg-graphic__gallery-green-circle {
       left: 35%;
-      bottom: 2.5%;
+      bottom: 6%;
     }
 
     .svg-graphic__architect-green-x {
@@ -1917,10 +1943,134 @@ img {
       right: 5%;
     }
 
-    .svg-graphic__contact-red-arc-reverse {
+    .svg-graphic__contact-red-arc {
       left: 0;
       top: 8%;
-      -webkit-transform: rotate(180deg);
-              transform: rotate(180deg);
+      -webkit-transform: rotateX(180deg);
+              transform: rotateX(180deg);
     }
+  }
+
+@media (min-width: 1200px) {
+
+    .svg-graphic__large-hero-green-x,
+    .svg-graphic__location-green-x {
+      width: 83px;
+    }
+
+    .svg-graphic__large-hero-green-waves,
+    .svg-graphic__architect-red-waves {
+      width: 80px;
+    }
+
+    .svg-graphic__location-red-romb,
+    .svg-graphic__architect-green-romb {
+      width: 76px;
+    }
+
+    .svg-graphic__contact-green-circle {
+      top: 20%;
+    }
+
+    .svg-graphic__contact-red-x {
+      bottom: 20%;
+    }
+
+    .svg-graphic__architect-red-x,
+    .svg-graphic__location-green-waves {
+      display: none;
+    }
+
+    .svg-graphic__architect-green-romb {
+      top: 50%;
+      right: -37px;
+    }
+
+    .svg-graphic__floorplans-red-romb {
+      left: 63%;
+    }
+
+    .svg-graphic__gallery-green-waves {
+      top: 12.5%;
+    }
+  }
+
+@media (min-width: 1800) {
+
+    .svg-graphic__gallery-green-stripes {
+      display: block;
+    }
+  }
+
+/* Do not edit modules/_sprite directly as it is generated automatically by Gulp.
+Instead edit  gulp/templates/sprite */
+
+.icon {
+      background-image: url('/assets/images/sprites/sprite-b54a59f7.svg');
+    }
+
+.icon--arc-red {
+    width: 82px;
+    height: 82px;
+    background-position: 100% 0;
+  }
+
+.icon--circle-green {
+    width: 46px;
+    height: 46px;
+    background-position: 0 100%;
+  }
+
+.icon--circle-red {
+    width: 46px;
+    height: 46px;
+    background-position: 16.487455197132615% 100%;
+  }
+
+.icon--logo {
+    width: 160px;
+    height: 159px;
+    background-position: 0 0;
+  }
+
+.icon--romb-green {
+    width: 76px;
+    height: 76px;
+    background-position: 64.2570281124498% 39.15094339622642%;
+  }
+
+.icon--romb-red {
+    width: 76px;
+    height: 76px;
+    background-position: 66.66666666666667% 75%;
+  }
+
+.icon--stripes-green {
+    width: 83px;
+    height: 83px;
+    background-position: 34.29752066115702% 77.5609756097561%;
+  }
+
+.icon--waves-green {
+    width: 80px;
+    height: 62px;
+    background-position: 99.18367346938776% 36.283185840707965%;
+  }
+
+.icon--waves-red {
+    width: 80px;
+    height: 62px;
+    background-position: 99.18367346938776% 63.716814159292035%;
+  }
+
+.icon--x-green {
+    width: 83px;
+    height: 83px;
+    background-position: 0 77.5609756097561%;
+  }
+
+.icon--x-red {
+    width: 83px;
+    height: 83px;
+    background-position: 66.11570247933884% 0;
   }

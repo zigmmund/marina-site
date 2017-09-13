@@ -1,0 +1,72 @@
+/* Do not edit modules/_sprite directly as it is generated automatically by Gulp.
+Instead edit  gulp/templates/sprite */
+
+    .icon {
+      background-image: url('/assets/images/sprites/sprite-b54a59f7.svg');
+    }
+
+  .icon--arc-red {
+    width: 82px;
+    height: 82px;
+    background-position: 100% 0;
+  }
+
+  .icon--circle-green {
+    width: 46px;
+    height: 46px;
+    background-position: 0 100%;
+  }
+
+  .icon--circle-red {
+    width: 46px;
+    height: 46px;
+    background-position: 16.487455197132615% 100%;
+  }
+
+  .icon--logo {
+    width: 160px;
+    height: 159px;
+    background-position: 0 0;
+  }
+
+  .icon--romb-green {
+    width: 76px;
+    height: 76px;
+    background-position: 64.2570281124498% 39.15094339622642%;
+  }
+
+  .icon--romb-red {
+    width: 76px;
+    height: 76px;
+    background-position: 66.66666666666667% 75%;
+  }
+
+  .icon--stripes-green {
+    width: 83px;
+    height: 83px;
+    background-position: 34.29752066115702% 77.5609756097561%;
+  }
+
+  .icon--waves-green {
+    width: 80px;
+    height: 62px;
+    background-position: 99.18367346938776% 36.283185840707965%;
+  }
+
+  .icon--waves-red {
+    width: 80px;
+    height: 62px;
+    background-position: 99.18367346938776% 63.716814159292035%;
+  }
+
+  .icon--x-green {
+    width: 83px;
+    height: 83px;
+    background-position: 0 77.5609756097561%;
+  }
+
+  .icon--x-red {
+    width: 83px;
+    height: 83px;
+    background-position: 66.11570247933884% 0;
+  }

@@ -6,7 +6,7 @@
     text-align: center;
     margin-bottom: 2rem;
 
-    @mixin atMedium {
+    @mixin atSmall {
       display: inline-block;
       text-align: left;
       width: 32.5%;
@@ -41,7 +41,7 @@
   }
 
   &__info {
-    font-size: .875rem;
+    font-size: .75rem;
   }
 
   &__title {

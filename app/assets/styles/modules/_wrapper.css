@@ -1,14 +1,27 @@
 .wrapper {
-  padding: 0 6.6rem;
-  max-width: 976px;
+  padding: 0 18px;
+  max-width: 1236px;
   margin: 0 auto;
 
-  @mixin atMedium {
+  /*@mixin atMedium {
     padding: 0 3.375rem;
+  }*/
+
+  &--medium {
+    max-width: 976px;
   }
 
   &--narrow {
-    padding: 0 1.125rem;
+    /*padding: 0 1.125rem;*/
+    max-width: 470px;
+  }
+
+  &--has-double-padding-until-small {
+    padding: 0 36px;
+
+    @mixin atSmall {
+      padding: 0 18px;
+    }
   }
 
   &--narrow-until-medium {
@@ -23,7 +36,7 @@
     padding: 0;
 
     @mixin atSmall {
-      padding: 0 3.375rem;
+      padding: 0 18px;
     }
   }
 
@@ -32,6 +45,22 @@
 
     @mixin atMedium {
       padding: 0 3.375rem;
+    }
+  }
+
+  &--has-4x-padding-until-medium {
+    padding: 0 72px;
+
+    @mixin atMedium {
+      padding: 0 18px;
+    }
+  }
+
+  &--has-10x-padding-until-medium {
+    padding: 0 180px;
+
+    @mixin atMedium {
+      padding: 0 18px;
     }
   }
 

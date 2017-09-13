@@ -11,21 +11,29 @@
   }
 
   &--narrow {
-    max-width: 40.75rem;
+    max-width: 19rem;
     margin: 0 auto;
+
+    @mixin atSmall {
+      max-width: 36rem;
+    }
+
+    @mixin atMedium {
+      max-width: 40.75rem;
+    }
   }
 
   &--extra-narrow {
 
     @mixin atSmall {
-      max-width: 30.75rem;
+      max-width: 15rem;
       margin: 0 auto;
     }
 
   }
 
   &--has-b-margin {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 
     @mixin atSmall {
       margin-bottom: 4rem;
@@ -33,7 +41,7 @@
   }
 
   &--has-b-margin-small {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 
   &--has-t-margin-until-medium {

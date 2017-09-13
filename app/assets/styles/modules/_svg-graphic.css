@@ -5,17 +5,16 @@
 
   @mixin atSmall {
     display: block;
+    transform: scale(.6);
 
     &__large-hero-green-x {
       top: 15%;
       left: 8%;
-      width: 63px;
     }
 
     &__large-hero-green-waves {
       right: 8%;
       top: 20%;
-      width: 60px;
     }
 
     &__large-hero-red-arc,
@@ -32,6 +31,7 @@
     &__floorplans-red-romb,
     &__gallery-green-waves,
     &__gallery-red-x,
+    &__gallery-green-circle,
     &__architect-green-x,
     &__architect-green-stripes,
     &__contact-green-circle,
@@ -44,116 +44,95 @@
     &__large-hero-red-x {
       right: 4%;
       bottom: 10%;
-      width: 63px;
     }
 
     &__large-hero-green-circle {
       top: 56%;
       right: 15%;
-      width: 36px;
-      height: 36px;
     }
 
     &__project-green-circle {
-      right: -33px;
+      right: -34px;
       bottom: 22%;
-      width: 36px;
     }
 
     &__project-green-stripes {
-      transform: rotateY(180deg);
-      width: 63px;
-      bottom: -30px;
-      left: 17%;
+      transform: rotateY(180deg) scale(.6);
+      bottom: -42px;
+      left: 10%;
     }
 
     &__project-red-romb {
-      width: 56px;
-      left: -28px;
+      left: -37px;
       top: 25%;
     }
 
     &__features-green-x {
-      width: 63px;
-      right: -27px;
-      bottom: 35%;
+      right: -40px;
+      bottom: 31%;
     }
 
     &__location-green-circle {
       top: 4%;
-      left: 6%;
-      width: 36px;
+      left: 10%;
     }
 
     &__location-red-romb {
       right: 4%;
       top: 2%;
-      width: 56px;
     }
 
     &__location-green-x {
-      right: -31px;
+      right: -40px;
       top: 38%;
-      width: 63px;
     }
 
     &__location-green-waves {
-      width: 60px;
-      left: -17px;
-      bottom: 46%;
+      left: -26px;
+      bottom: 45.5%;
     }
 
     &__location-red-x {
-      width: 63px;
-      right: 22px;
-      bottom: 10.2%;
+      right: 30px;
+      bottom: 9.8%;
     }
 
     &__floorplans-red-arc {
-      width: 62px;
-      transform: rotateX(180deg);
-      left: -22px;
-      top: 50%;
+      transform: rotateX(180deg) scale(.6);
+      left: -27px;
+      top: 35%;
     }
 
     &__gallery-red-circle {
-      width: 36px;
       top: 35%;
       right: 12%;
     }
 
     &__gallery-green-stripes {
-      width: 63px;
-      left: -14px;
-      bottom: 2%;
+      left: -27px;
+      bottom: 0;
     }
 
     &__architect-green-romb {
-      width: 56px;
-      right: -27px;
+      right: -37px;
       top: 25%;
     }
 
     &__architect-red-x {
-      width: 63px;
-      left: 5%;
-      bottom: 15%;
+      left: 10%;
+      bottom: 14%;
     }
 
     &__architect-red-waves {
-      width: 60px;
-      right: -16px;
+      right: -30px;
       bottom: 10%;
     }
 
     &__architect-logo {
       left: 50%;
-      transform: translateX(-50%);
-
+      transform: translateX(-50%) scale(.6);
     }
-
   }
-
 
   @mixin atMedium {
     display: block;

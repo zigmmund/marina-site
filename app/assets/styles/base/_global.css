@@ -6,8 +6,8 @@ html {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  color: #29296D;
-  background-color: #29296D;
+  color: $mainBlue;
+  background-color: $mainBlue;
   padding: 1rem;
   overflow-x: hidden;
   min-width: 375px;

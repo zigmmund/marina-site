@@ -5,6 +5,10 @@ Instead edit  gulp/templates/sprite */
       background-image: url('/assets/images/sprites/sprite-b54a59f7.svg');
     }
 
+    .no-svg .icon {
+      background-image: url('/assets/images/sprites/sprite-b54a59f7.png');
+    }
+
   .icon--arc-red {
     width: 82px;
     height: 82px;

@@ -11,9 +11,13 @@
 
     @mixin atLarge {
       position: absolute;
-      right: 0;
+      right: 2%;
       top: 50%;
       transform: translateY(-50%);
+    }
+
+    @mixin atExtraLarge {
+      right: 5%;
     }
   }
 

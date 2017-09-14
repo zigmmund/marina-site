@@ -36,7 +36,11 @@
 
   &__numbers {
     font-size: 3rem;
-    font-family: serif;
+    font-family: 'gtsectradisplay-regular', serif;
+
+    > sub {
+      font-size: 100%;
+    }
   }
 
   &__units {

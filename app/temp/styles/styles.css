@@ -475,6 +475,14 @@ img {
           box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'gtsectradisplay-regular';
+    src: url('../../assets/fonts/gt-sectra-display-regular-webfont.woff2') format('woff2'),
+         url('../../assets/fonts/gt-sectra-display-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /*! lightslider - v1.1.3 - 2015-04-14
 * https://github.com/sachinchoolur/lightslider
 * Copyright (c) 2015 Sachin N; Licensed MIT */
@@ -863,7 +871,7 @@ img {
 
 .headline {
   font-weight: 300;
-  font-family: serif;
+  font-family: 'gtsectradisplay-regular', serif;
   font-size: 2.8rem;
   margin: 0 0 .5em;
   letter-spacing: 1px;
@@ -1077,9 +1085,10 @@ img {
   }
   }
 
-@media (min-width: 1800) {
+@media (min-width: 1800px) {
 
 .site-header__logo {
+      left: 5%;
       font-size: 2.4rem
   }
   }
@@ -1195,10 +1204,17 @@ img {
 
 .primary-nav--pull-right {
       position: absolute;
-      right: 0;
+      right: 2%;
       top: 50%;
       -webkit-transform: translateY(-50%);
               transform: translateY(-50%)
+  }
+  }
+
+@media (min-width: 1800px) {
+
+.primary-nav--pull-right {
+      right: 5%
   }
   }
 
@@ -1240,7 +1256,7 @@ img {
     font-weight: 500;
   }
 
-@media (min-width: 1800) {
+@media (min-width: 1800px) {
 
 .primary-nav a {
       padding: .6rem 1.2rem
@@ -1306,8 +1322,12 @@ img {
 
 .features__numbers {
     font-size: 3rem;
-    font-family: serif;
+    font-family: 'gtsectradisplay-regular', serif;
   }
+
+.features__numbers > sub {
+      font-size: 100%;
+    }
 
 .features__units {
     text-transform: uppercase;
@@ -1416,6 +1436,14 @@ img {
   }
   }
 
+/*.lSAction>.lSPrev {
+    background: url('../../assets/images/prev.svg');
+  }
+
+  .lSAction>.lSNext {
+    background: url('../../assets/images/next.svg');
+  }*/
+
 .gallery .lSPrev,
   .gallery .lSNext {
     display: none;
@@ -1426,6 +1454,9 @@ img {
 .gallery .lSPrev,
   .gallery .lSNext {
       display: block
+      /*width: 47px;
+      height: 47px;
+      margin-top: -24px;*/
   }
   }
 
@@ -1591,6 +1622,13 @@ img {
 .location__pin {
       left: 54%;
       bottom: 30%
+  }
+  }
+
+@media (min-width: 1800px) {
+
+.location__pin {
+      left: 53%
   }
   }
 
@@ -2187,14 +2225,97 @@ Instead edit  gulp/templates/sprite */
     }
   }
 
-@media (min-width: 1800) {
+@media (min-width: 1800px) {
 
 .svg-graphic {
     -webkit-transform: scale(1);
             transform: scale(1)
 }
 
-    .svg-graphic__gallery-green-stripes {
-      display: block;
+    .svg-graphic__large-hero-green-waves {
+      right: 10%;
+      top: 24%;
+    }
+
+    .svg-graphic__large-hero-red-romb {
+      bottom: 14%;
+    }
+
+    .svg-graphic__large-hero-green-stripes {
+      bottom: 2%;
+    }
+
+    .svg-graphic__project-green-waves {
+      left: 10%;
+      bottom: 25%;
+    }
+
+    .svg-graphic__features-red-arc {
+      -webkit-transform: rotateY(180deg) scale(1);
+              transform: rotateY(180deg) scale(1);
+    }
+
+    .svg-graphic__location-green-stripes {
+      -webkit-transform: rotateX(180deg) scale(1);
+              transform: rotateX(180deg) scale(1);
+      top: 23.5%;
+      left: 19%;
+    }
+
+    .svg-graphic__location-green-x {
+      right: 22%;
+      top: 22%;
+    }
+
+    .svg-graphic__location-red-romb {
+      left: 48%;
+      top: 56.8%;
+    }
+
+    .svg-graphic__floorplans-red-arc {
+      -webkit-transform: rotateY(180deg) scale(1);
+              transform: rotateY(180deg) scale(1);
+      left: 28%;
+    }
+
+    .svg-graphic__floorplans-green-stripes {
+      left: 17%;
+      top: 44%;
+    }
+
+    .svg-graphic__floorplans-red-romb {
+      left: 48%;
+    }
+
+    .svg-graphic__gallery-green-waves {
+      left: 20%;
+    }
+
+    .svg-graphic__architect-red-waves {
+      right: 15%;
+    }
+
+    .svg-graphic__architect-green-romb {
+      top: 65%;
+    }
+
+    .svg-graphic__architect-green-stripes {
+      left: 30%;
+    }
+
+    .svg-graphic__contact-red-arc {
+      -webkit-transform: rotateX(180deg) scale(1);
+              transform: rotateX(180deg) scale(1);
+      left: 1px;
+      top: 5%;
+    }
+
+    .svg-graphic__contact-green-waves {
+      left: 10%;
+    }
+
+    .svg-graphic__architect-logo {
+      -webkit-transform: translateX(-50%) scale(1);
+              transform: translateX(-50%) scale(1);
     }
   }

@@ -6,7 +6,7 @@ $('.site-header__menu-icon').on('click', function() {
 $(document).ready(function() {
   $("#lightSlider").lightSlider({
     pager: false,
-    auto: true,
+    auto: false,
     item: 1,
     loop: true,
     slideMove: 1,

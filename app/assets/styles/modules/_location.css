@@ -28,6 +28,10 @@
       bottom: 30%;
     }
 
+    @mixin atExtraLarge {
+      left: 53%;
+    }
+
     &:after {
       content: '';
       width: 0;

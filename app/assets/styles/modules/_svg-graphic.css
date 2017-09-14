@@ -379,8 +379,86 @@
   @mixin atExtraLarge {
     transform: scale(1);
 
-    &__gallery-green-stripes {
-      display: block;
+    &__large-hero-green-waves {
+      right: 10%;
+      top: 24%;
+    }
+
+    &__large-hero-red-romb {
+      bottom: 14%;
+    }
+
+    &__large-hero-green-stripes {
+      bottom: 2%;
+    }
+
+    &__project-green-waves {
+      left: 10%;
+      bottom: 25%;
+    }
+
+    &__features-red-arc {
+      transform: rotateY(180deg) scale(1);
+    }
+
+    &__location-green-stripes {
+      transform: rotateX(180deg) scale(1);
+      top: 23.5%;
+      left: 19%;
+    }
+
+    &__location-green-x {
+      right: 22%;
+      top: 22%;
+    }
+
+    &__location-red-romb {
+      left: 48%;
+      top: 56.8%;
+    }
+
+    &__floorplans-red-arc {
+      transform: rotateY(180deg) scale(1);
+      left: 28%;
+    }
+
+    &__floorplans-green-stripes {
+      left: 17%;
+      top: 44%;
+    }
+
+    &__floorplans-red-romb {
+      left: 48%;
+    }
+
+    &__gallery-green-waves {
+      left: 20%;
+    }
+
+    &__architect-red-waves {
+      right: 15%;
+    }
+
+    &__architect-green-romb {
+      top: 65%;
+    }
+
+    &__architect-green-stripes {
+      left: 30%;
+    }
+
+    &__contact-red-arc {
+      transform: rotateX(180deg) scale(1);
+      left: 1px;
+      top: 5%;
+    }
+
+    &__contact-green-waves {
+      left: 10%;
+    }
+
+    &__architect-logo {
+      transform: translateX(-50%) scale(1);
     }
   }
 }

@@ -25,6 +25,7 @@
     }
 
     @mixin atExtraLarge {
+      left: 5%;
       font-size: 2.4rem;
     }
   }

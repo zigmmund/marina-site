@@ -1,22 +1,11 @@
 .gallery {
 
-  /*.lSAction>.lSPrev {
-    background: url('../../assets/images/prev.svg');
-  }
-
-  .lSAction>.lSNext {
-    background: url('../../assets/images/next.svg');
-  }*/
-
   .lSPrev,
   .lSNext {
     display: none;
 
     @mixin atSmall {
       display: block;
-      /*width: 47px;
-      height: 47px;
-      margin-top: -24px;*/
     }
   }
 

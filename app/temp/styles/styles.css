@@ -1436,14 +1436,6 @@ img {
   }
   }
 
-/*.lSAction>.lSPrev {
-    background: url('../../assets/images/prev.svg');
-  }
-
-  .lSAction>.lSNext {
-    background: url('../../assets/images/next.svg');
-  }*/
-
 .gallery .lSPrev,
   .gallery .lSNext {
     display: none;
@@ -1454,9 +1446,6 @@ img {
 .gallery .lSPrev,
   .gallery .lSNext {
       display: block
-      /*width: 47px;
-      height: 47px;
-      margin-top: -24px;*/
   }
   }
 
@@ -1757,7 +1746,11 @@ img {
 Instead edit  gulp/templates/sprite */
 
 .icon {
-      background-image: url('/assets/images/sprites/sprite-b54a59f7.svg');
+      background-image: url('../../assets/images/sprites/sprite-b54a59f7.svg');
+    }
+
+.no-svg .icon {
+      background-image: url('../../assets/images/sprites/sprite-b54a59f7.png');
     }
 
 .icon--arc-red {

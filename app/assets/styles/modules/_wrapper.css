@@ -8,7 +8,6 @@
   }
 
   &--narrow {
-    /*padding: 0 1.125rem;*/
     max-width: 470px;
   }
 
@@ -45,11 +44,16 @@
   }
 
   &--has-4x-padding-until-medium {
-    padding: 0 72px;
+    @mixin atSmall {
+      padding: 0 72px;
+    }
   }
 
   &--has-10x-padding-until-medium {
-    padding: 0 180px;
+
+    @mixin atSmall {
+      padding: 0 180px;
+    }
 
     @mixin atMedium {
       padding: 0 18px;

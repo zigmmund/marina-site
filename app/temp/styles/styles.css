@@ -721,7 +721,6 @@ img {
   }
 
 .wrapper--narrow {
-    /*padding: 0 1.125rem;*/
     max-width: 470px;
   }
 
@@ -769,12 +768,18 @@ img {
   }
   }
 
+@media (min-width: 768px) {
+
 .wrapper--has-4x-padding-until-medium {
-    padding: 0 72px;
+      padding: 0 72px
+  }
   }
 
+@media (min-width: 768px) {
+
 .wrapper--has-10x-padding-until-medium {
-    padding: 0 180px;
+      padding: 0 180px
+  }
   }
 
 @media (min-width: 992px) {
@@ -1076,7 +1081,7 @@ img {
 @media (min-width: 1200px) {
 
 .site-header__logo {
-      font-size: 2.2rem;
+      font-size: 1.8rem;
       position: absolute;
       display: inline-block;
       left: auto;

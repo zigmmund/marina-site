@@ -1481,10 +1481,6 @@ img {
   background-size: auto;
 }
 
-/*@mixin atLarge {
-    background-size: cover;
-  }*/
-
 .location__pin {
     position: absolute;
     background: #29296D;

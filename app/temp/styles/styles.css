@@ -1645,11 +1645,11 @@ img {
 Instead edit  gulp/templates/sprite */
 
 .icon {
-      background-image: url('../../assets/images/sprites/sprite-b54a59f7.svg');
+      background-image: url('../../assets/images/sprites/sprite-443f81e4.svg');
     }
 
 .no-svg .icon {
-      background-image: url('../../assets/images/sprites/sprite-b54a59f7.png');
+      background-image: url('../../assets/images/sprites/sprite-443f81e4.png');
     }
 
 .icon--arc-red {
@@ -1661,61 +1661,67 @@ Instead edit  gulp/templates/sprite */
 .icon--circle-green {
     width: 46px;
     height: 46px;
-    background-position: 0 100%;
+    background-position: 88.38709677419355% 68.89632107023411%;
   }
 
 .icon--circle-red {
     width: 46px;
     height: 46px;
-    background-position: 16.487455197132615% 100%;
+    background-position: 49.03225806451613% 89.96655518394648%;
   }
 
 .icon--logo {
     width: 160px;
     height: 159px;
+    background-position: 0 59.13978494623656%;
+  }
+
+.icon--logo-large-hero-mobile {
+    width: 191px;
+    height: 110px;
     background-position: 0 0;
   }
 
 .icon--romb-green {
     width: 76px;
     height: 76px;
-    background-position: 64.2570281124498% 39.15094339622642%;
+    background-position: 0 100%;
   }
 
 .icon--romb-red {
     width: 76px;
     height: 76px;
-    background-position: 66.66666666666667% 75%;
+    background-position: 27.142857142857142% 100%;
   }
 
 .icon--stripes-green {
     width: 83px;
     height: 83px;
-    background-position: 34.29752066115702% 77.5609756097561%;
+    background-position: 69.96336996336996% 63.3587786259542%;
   }
 
 .icon--waves-green {
     width: 80px;
     height: 62px;
-    background-position: 99.18367346938776% 36.283185840707965%;
+    background-position: 99.27536231884058% 28.975265017667844%;
   }
 
 .icon--waves-red {
     width: 80px;
     height: 62px;
-    background-position: 99.18367346938776% 63.716814159292035%;
+    background-position: 99.27536231884058% 50.88339222614841%;
   }
 
 .icon--x-green {
     width: 83px;
     height: 83px;
-    background-position: 0 77.5609756097561%;
+    background-position: 69.96336996336996% 31.6793893129771%;
   }
 
 .icon--x-red {
     width: 83px;
     height: 83px;
-    background-position: 66.11570247933884% 0;
+    background-position: 69.96336996336996% 0;
   }
 
 .svg-graphic {

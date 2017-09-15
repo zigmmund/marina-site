@@ -1,1 +1,0 @@
-$(".site-header__menu-icon").on("click",function(){$(this).toggleClass("site-header__menu-icon--close-x"),$(".primary-nav").slideToggle(300)}),$(document).ready(function(){$("#lightSlider").lightSlider({pager:!1,auto:!1,item:1,loop:!0,slideMove:1,easing:"cubic-bezier(0.25, 0, 0.25, 1)",speed:800,pause:3e3})});

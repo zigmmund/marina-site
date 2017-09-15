@@ -7,7 +7,7 @@
   <meta name="keywords" content="Travel planning, travel bundles, travel escapes">
   <meta name="description" content="Your clarity. One trip away. We create soul restoring journeys that inspire you to be you.">
 
-  <link rel="stylesheet" href="assets/styles/styles-faf686198b.css"/>
+  <link rel="stylesheet" href="assets/styles/styles-0cf5b7cd53.css"/>
 </head>
 <body>
   <div class="large-hero">
@@ -26,8 +26,12 @@
 
     <div class="large-hero__text-content">
       <div class="wrapper">
-        <h1 class="large-hero__title">Marina Square</h1>
-        <h2 class="large-hero__subtitle">Shopping</h2>
+        <picture>
+          <source srcset="assets/images/logo-large-hero.svg" media="(min-width: 768px)"/>
+          <img class="large-hero__logo" src="assets/images/logo-large-hero-mobile.svg" alt="Marina Square Shopping" />
+        </picture>
+
+
       </div>
     </div>
 
@@ -48,7 +52,9 @@
 
 
   <header class="site-header">
-    <a href="#" class="site-header__logo">Marina Square</a>
+    <a href="#" class="site-header__logo">
+      <img src="assets/images/logo-primary-nav.svg" alt="Marina Square" />
+    </a>
 
     <div class="site-header__menu-icon">
       <div class="site-header__menu-icon__middle"></div>
@@ -137,7 +143,7 @@
 
       <div class="row row--has-negative-scale-until-medium">
         <div class="row__medium-6 row--r-padding-small row--has-negative-scale-until-medium">
-          <h3 class="headline headline--small headline--has-t-margin headline--has-t-padding-until-medium">Villamoura</h3>
+          <h3 class="headline headline--small headline--has-t-margin headline--has-t-padding-until-medium">Vilamoura</h3>
           <p class="paragraph">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
         </div>
         <div class="row__medium-6 row--has-negative-scale-until-medium">
@@ -178,17 +184,19 @@
 
   <div id="gallery" class="gallery page-section page-section--white page-section--has-no-padding-until-small">
     <div class="wrapper wrapper--no-padding-until-small wrapper--has-4x-padding-until-medium">
-      <ul id="lightSlider">
-        <li class="gallery__item">
-          <img class="lazyload" data-src="assets/images/marina-square-view.jpg" alt="Marina Square sideview">
-        </li>
-        <li class="gallery__item">
-          <img class="lazyload" data-src="assets/images/algarve-hi-dpi.jpg" alt="Algarve">
-        </li>
-        <li class="gallery__item">
-          <img class="lazyload" data-src="assets/images/vilamoura.jpg" alt="Vilamoura">
-        </li>
-      </ul>
+      <div class="rslider_container">
+        <ul class="rslides">
+          <li class="gallery__item">
+            <img class="lazyload" data-src="assets/images/marina-square-view.jpg" alt="Marina Square sideview">
+          </li>
+          <li class="gallery__item">
+            <img class="lazyload" data-src="assets/images/algarve-hi-dpi.jpg" alt="Algarve">
+          </li>
+          <li class="gallery__item">
+            <img class="lazyload" data-src="assets/images/vilamoura.jpg" alt="Vilamoura">
+          </li>
+        </ul>
+      </div>
     </div>
 
     <span class="icon icon--waves-green svg-graphic svg-graphic__gallery-green-waves"></span>
@@ -274,14 +282,13 @@
   </div><!-- contact -->
 
   <div id="map" class="location">
-    <!-- <img src="assets/images/google-map.jpg" alt=""> -->
     <div class="location__pin">
       <h2 class="location__title">Marina Square</h2>
       <h3 class="location__subtitle">Shopping</h3>
     </div>
   </div>
 
-  <footer class="site-footer page-section">
+  <footer class="site-footer page-section page-section--has-normal-padding-at-medium">
     <div class="wrapper wrapper--medium">
       <div class="site-footer__section">
         <h4 class="site-footer__headline">&copy; Marina Square 2017</h4>
@@ -299,21 +306,20 @@
         <p class="site-footer__info">info@marinasquare.com</p>
       </div>
       <div class="site-footer__section site-footer--has-full-width-until-large">
-        <h2 class="site-footer__title">Marina <br/> Square</h2>
-        <h3 class="site-footer__subtitle">Shopping</h3>
+        <img class="site-footer__logo" src="assets/images/logo-footer.svg" alt="Marina Square shopping" />
       </div>
     </div>
   </footer>
 
   <script src="assets/scripts/vendor/jquery-c9f5aeeca3.min.js"></script>
 
-  <script src="assets/scripts/vendor/lightslider-50f50ebefe.min.js"></script>
+  <script src="assets/scripts/vendor/responsiveslides-e0289984dc.min.js"></script>
 
   <script src="assets/scripts/vendor/lazysizes-272f1f4eab.min.js"></script>
 
   <script src="assets/scripts/modernizr-22e250e7c6.js"></script>
 
-  <script src="assets/scripts/app-56da577628.js"></script>
+  <script src="assets/scripts/app-5773fdf786.js"></script>
 
 
 

@@ -89,6 +89,10 @@
 
 }
 
+.no-svg .centered-btns_nav {
+  background: transparent url("../../assets/images/controls.png") no-repeat 100% 0;
+}
+
 .centered-btns_nav.next {
   left: auto;
   background-position: 0 0;

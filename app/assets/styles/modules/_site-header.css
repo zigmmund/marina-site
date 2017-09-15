@@ -9,24 +9,31 @@
   &__logo {
     position: static;
     display: block;
-    text-align: center;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 2px;
-    color: #fff;
+    width: 220px;
+    margin: 1rem auto;
+
+    @mixin atSmall {
+      width: 360px;
+    }
 
     @mixin atLarge {
-      font-size: 1.8rem;
+      width: 220px;
+      margin: .125rem 0;
       position: absolute;
       display: inline-block;
       left: auto;
       transform: translate(0, -50%);
     }
 
-    @mixin atExtraLarge {
+    @media (min-width: 1366px) {
       left: 5%;
-      font-size: 2.4rem;
+      width: 240px;
+      margin: .25rem 0;
+    }
+
+    @mixin atExtraLarge {
+      width: 280px;
+      left: 10%;
     }
   }
 
@@ -34,10 +41,16 @@
     width: 20px;
     height: 19px;
     position: absolute;
-    top: 20px;
+    top: 30px;
     right: 10px;
     z-index: 10;
     cursor: pointer;
+
+    @mixin atSmall {
+      top: 35px;
+      right: 30px;
+      transform: scale(1.5);
+    }
 
     @mixin atLarge {
       top: 30px;

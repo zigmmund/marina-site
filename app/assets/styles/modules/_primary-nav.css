@@ -50,8 +50,8 @@
     text-decoration: none;
     text-transform: uppercase;
     color: #fff;
-    font-size: .9375rem;
-    padding: .6rem .8rem;
+    font-size: .8125rem;
+    padding: .6rem .9375rem;
     font-weight: 500;
 
     @mixin atExtraLarge {

@@ -566,7 +566,7 @@ img {
 .large-hero__scroll-tip {
     color: #fff;
     text-transform: uppercase;
-    font-size: .8rem;
+    font-size: .875rem;
     font-weight: 500;
     letter-spacing: 1px;
   }
@@ -578,7 +578,7 @@ img {
   text-decoration: none;
   padding: .6rem;
   display: inline-block;
-  font-size: .875rem;
+  font-size: .8125rem;
   letter-spacing: 1px;
   font-weight: 500;
 }
@@ -935,7 +935,7 @@ img {
     text-decoration: none;
     text-transform: uppercase;
     color: #fff;
-    font-size: .9375rem;
+    font-size: .8125rem;
     padding: .6rem 1.2rem;
     font-weight: 500;
   }
@@ -1164,8 +1164,8 @@ img {
     text-decoration: none;
     text-transform: uppercase;
     color: #fff;
-    font-size: .9375rem;
-    padding: .6rem .8rem;
+    font-size: .8125rem;
+    padding: .6rem .9375rem;
     font-weight: 500;
   }
 
@@ -1236,6 +1236,7 @@ img {
 .features__numbers {
     font-size: 3rem;
     font-family: 'gtsectradisplay-regular', serif;
+    margin-bottom: .5rem;
   }
 
 .features__numbers > sub {

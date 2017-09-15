@@ -37,6 +37,7 @@
   &__numbers {
     font-size: 3rem;
     font-family: 'gtsectradisplay-regular', serif;
+    margin-bottom: .5rem;
 
     > sub {
       font-size: 100%;

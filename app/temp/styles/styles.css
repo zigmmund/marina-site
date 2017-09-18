@@ -1418,6 +1418,7 @@ img {
     background: none;
     border: none;
     border-bottom: solid 1px #A9AAC4;
+    border-radius: 0;
   	font-size: 1.000em;
     font-weight: 400;
     letter-spacing: 1px;
@@ -1450,7 +1451,6 @@ img {
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
-    border-radius: 0;
   }
 
 .form__textarea {

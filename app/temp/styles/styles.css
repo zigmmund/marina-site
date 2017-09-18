@@ -996,6 +996,15 @@ img {
 }
   }
 
+.site-header--fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #29296D;
+    z-index: 10;
+  }
+
 .site-header__logo {
     position: static;
     display: block;

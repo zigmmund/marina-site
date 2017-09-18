@@ -6,6 +6,15 @@
     padding: 3rem
   }
 
+  &--fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #29296D;
+    z-index: 10;
+  }
+
   &__logo {
     position: static;
     display: block;

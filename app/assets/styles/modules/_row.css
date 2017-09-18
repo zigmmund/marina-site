@@ -19,6 +19,11 @@
     min-height: 400px;
     background: url("../../assets/images/floorplans.png") 100% 50% no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+
+    @mixin tillDesktop {
+      background-attachment: scroll;
+    }
 
     @mixin atSmall {
       min-height: 600px;

@@ -4,6 +4,11 @@
   height: 100vh;
   background: url("../../assets/images/hero--large.jpg") center center no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+
+  @mixin tillDesktop {
+    background-attachment: scroll;
+  }
 
   &:after {
     content: '';
@@ -58,6 +63,19 @@
     width: 100%;
     text-align: center;
     z-index: 1;
+    transform: scale(.8);
+
+    @mixin iPhone5Landscape {
+      transform: scale(.6);
+    }
+
+    @mixin iPhone6Landscape {
+      transform: scale(.6);
+    }
+
+    @mixin iPhone6PlusLandscape {
+      transform: scale(.6);
+    }
   }
 
   &__scroll-tip {

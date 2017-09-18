@@ -10,7 +10,7 @@ body {
   background-color: $mainBlue;
   padding: 1rem;
   overflow-x: hidden;
-  min-width: 375px;
+  min-width: 320px;
 }
 
 img {

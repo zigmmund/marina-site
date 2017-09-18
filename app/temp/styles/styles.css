@@ -2084,12 +2084,17 @@ Instead edit  gulp/templates/sprite */
       top: 20%;
     }
 
+    .svg-graphic__location-red-romb {
+      left: 47%;
+      top: 58.5%;
+    }
+
     .svg-graphic__floorplans-red-romb {
       left: 50%;
     }
 
     .svg-graphic__gallery-green-waves {
-      top: 5.5%;
+      top: 7.5%;
       left: 7.5%;
     }
 
@@ -2159,7 +2164,7 @@ Instead edit  gulp/templates/sprite */
 
     .svg-graphic__location-red-romb {
       left: 48%;
-      top: 56.8%;
+      top: 58.5%;
     }
 
     .svg-graphic__floorplans-red-arc {

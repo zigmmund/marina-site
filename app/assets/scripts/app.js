@@ -11,4 +11,6 @@ $(function() {
       speed: 500,
       namespace: "centered-btns"
     });
+
+    $('.animate').scrolla();
 });

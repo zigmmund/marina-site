@@ -330,22 +330,11 @@
 
   <div class="map-wrapper">
     <div id="map">
-      <script>
-        function initMap() {
-          var uluru = {lat: 37.076777, lng: -8.117668};
-          var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 13,
-            center: uluru,
-            disableDefaultUI: true
-          });
-          var marker = new google.maps.Marker({
-            position: uluru,
-            map: map
-          });
-        }
-      </script>
+      <!-- build:js assets/scripts/map.js -->
+      <script src="assets/scripts/map.js"></script>
+      <!-- endbuild -->
       <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdqZa8ttm0qlxX9Gf_qDmFE39UDduUqhc&callback=initMap">
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdqZa8ttm0qlxX9Gf_qDmFE39UDduUqhc&callback=initMap">
       </script>
     </div>
   </div>

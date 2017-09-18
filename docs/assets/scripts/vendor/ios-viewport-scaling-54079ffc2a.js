@@ -1,0 +1,1 @@
+!function(e){function t(){r.content="width=device-width,minimum-scale="+m[0]+",maximum-scale="+m[1],e.removeEventListener(n,t,!0)}var n="gesturestart",i="querySelectorAll",m=[1,1],r=i in e?e[i]("meta[name=viewport]"):[];(r=r[r.length-1])&&"addEventListener"in e&&(t(),m=[.25,1.6],e.addEventListener(n,t,!0))}(document);

@@ -1,9 +1,10 @@
 .paragraph {
 
   font-size: .75rem;
+  line-height: 1.5;
 
   @mixin atMedium {
-    font-size: 1rem;
+    font-size: 1rem;  
   }
 
   &--centered {

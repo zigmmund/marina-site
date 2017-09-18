@@ -1295,6 +1295,7 @@ img {
 .paragraph {
 
   font-size: .75rem;
+  line-height: 1.5;
 }
 
 @media (min-width: 992px) {

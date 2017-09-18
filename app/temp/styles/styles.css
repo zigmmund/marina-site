@@ -1290,6 +1290,7 @@ img {
     font-size: 3rem;
     font-family: 'gtsectradisplay-regular', serif;
     margin-bottom: .5rem;
+    
   }
 
 .features__numbers > sub {
@@ -1393,6 +1394,7 @@ img {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     width: 80%;
+    
   }
 
 @media (min-width: 768px) {
@@ -1401,6 +1403,7 @@ img {
       width: auto;
       -webkit-transform: translate(0, -50%);
               transform: translate(0, -50%)
+    
   }
   }
 

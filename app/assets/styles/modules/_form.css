@@ -8,12 +8,12 @@
   &__text-input,
   &__select,
   &__textarea {
-    color: #A9AAC4;
+    color: $formLightGrey;
     font: inherit;
     margin: 0;
     background: none;
     border: none;
-    border-bottom: solid 1px #A9AAC4;
+    border-bottom: solid 1px $formLightGrey;
     border-radius: 0;
   	font-size: 1.000em;
     font-weight: 400;
@@ -29,11 +29,11 @@
   &__textarea:focus {
     outline: none;
     padding: 0 0 0.875em 0;
-    border-bottom: solid 1px #29296D;
+    border-bottom: solid 1px $mainBlue;
   }
 
   &__textarea:focus {
-    border-bottom: solid 1px #29296D;
+    border-bottom: solid 1px $mainBlue;
   }
 
   &__text-input {
@@ -91,16 +91,16 @@
   }
 
   ::-webkit-input-placeholder {
-  	color: #A9AAC4;
+  	color: $formLightGrey;
   }
 
   :-moz-placeholder {
-  	color: #A9AAC4;
+  	color: $formLightGrey;
   	opacity: 1;
   }
 
   :-ms-input-placeholder {
-  	color: #A9AAC4;
+  	color: $formLightGrey;
   }
 
 

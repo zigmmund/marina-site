@@ -6,6 +6,7 @@ $('.site-header__menu-icon').on('click', function() {
 
 });
 
+
 // Sticky header
 var h = window.innerHeight;
 var wrap = $('.site-header');
@@ -20,11 +21,6 @@ $(document).on('scroll', function() {
     wrap.removeClass("site-header--fixed");
   }
 })
-
-
-// $(document).scroll(function() {
-//     console.log($(document).scrollTop());
-// })
 
 
 // Slider initialization

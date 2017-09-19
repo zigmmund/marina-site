@@ -59,8 +59,10 @@ $('a[href*="#"]')
       if (target.length) {
         // Only prevent default if animation is actually gonna happen
         event.preventDefault();
+        // Add a space before the actual section to be scrolled
+        var targetOffset = target.offset().top - 150;
         $('html, body').animate({
-          scrollTop: target.offset().top
+          scrollTop: targetOffset
         }, 1000, function() {
           // Callback after animation
           // Must change focus!

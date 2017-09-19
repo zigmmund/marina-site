@@ -37,6 +37,7 @@ $(function() {
     $('.animate').scrolla();
 });
 
+
 // Smooth Scrolling
 
 // Select all links with hashes

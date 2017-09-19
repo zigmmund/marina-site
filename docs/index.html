@@ -276,28 +276,30 @@
     <div class="wrapper wrapper--has-double-padding-until-small wrapper--has-4x-padding-until-medium">
       <h2 class="headline headline--centered">Register Your Interest</h2>
 
-      <form action="" class="form" method="post">
+      <!-- TODO: Replace "your@email.com" with custom one to get up to 1000 messages per month for free -->
+      <form class="form" method="POST" action="https://formspree.io/your@email.com">
         <div class="form__email">
           <label for="email"></label>
           <input type="email" placeholder="Your Email" name="email" class="form__text-input" required>
         </div>
         <div class="form__last-name">
           <label for="last_name"></label>
-          <input type="text" placeholder="Last Name" name="last-name" class="form__text-input" equired>
+          <input type="text" placeholder="Last Name" name="last-name" class="form__text-input" pattern="^[a-zA-Z]+$" required>
         </div>
         <div class="form__first-name">
           <label for="first_name"></label>
-          <input type="text" placeholder="First Name" name="first_name" class="form__text-input" required>
+          <input type="text" placeholder="First Name" name="first_name" class="form__text-input" pattern="^[a-zA-Z]+$" required>
         </div>
         <div class="form__phone">
           <label for="phone"></label>
-          <input type="text" placeholder="Phone" name="phone" class="form__text-input">
+          <input type="tel" placeholder="Phone" name="phone" class="form__text-input">
         </div>
         <div class="form__country">
           <label for="country"></label>
           <select name="country" placeholder="Country" class="form__select">
             <option disabled hidden selected>Country</option>
             <option>Portugal</option>
+            <option>Spain</option>
           </select>
         </div>
         <div class="form__subject">
@@ -370,7 +372,7 @@
 
   <script src="assets/scripts/modernizr-22e250e7c6.js"></script>
 
-  <script src="assets/scripts/app-ca96d9c2fe.js"></script>
+  <script src="assets/scripts/app-9e8e6ec372.js"></script>
 
 
 

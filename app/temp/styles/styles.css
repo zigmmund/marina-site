@@ -741,6 +741,7 @@ img {
 .page-section {
   padding: 4.8rem 0;
   position: relative;
+  outline: none;
 }
 
 .page-section--wide {
@@ -1384,6 +1385,7 @@ img {
 .floorplans {
   color: #fff;
   position: relative;
+  outline: none;
 
 }
 
@@ -1394,7 +1396,7 @@ img {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     width: 80%;
-    
+
   }
 
 @media (min-width: 768px) {
@@ -1403,7 +1405,7 @@ img {
       width: auto;
       -webkit-transform: translate(0, -50%);
               transform: translate(0, -50%)
-    
+
   }
   }
 

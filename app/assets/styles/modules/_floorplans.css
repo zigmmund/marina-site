@@ -1,6 +1,7 @@
 .floorplans {
   color: #fff;
   position: relative;
+  outline: none;
 
   &__text-content {
     position: absolute;
@@ -13,7 +14,7 @@
       width: auto;
       transform: translate(0, -50%);
     }
-    
+
   }
 
 }

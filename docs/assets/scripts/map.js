@@ -125,7 +125,10 @@ function initMap() {
               }
           ],
     center: uluru,
-    disableDefaultUI: true
+    disableDefaultUI: true,
+    zoomControl: true,
+    fullscreenControl: true
+
   });
   var iconBase = 'assets/images/custom-pin.svg';
 
